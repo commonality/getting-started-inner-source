@@ -5,11 +5,11 @@
 >
 > Welcome to `getting-started-inner-source`. You're among people eager to promote recommended community standards that encourage open source consumption and contributions with comprehensive `README`, `CODE_OF_CONDUCT`, `CONTRIBUTING`, and `LICENSE` documents. If you are curious, you're already a member!
 
-<dfn>__Contributions__ start with __community conversations__ that lead to __positive change.__</dfn> Open source provides a flexible collaboration model that facilitates change, even among perfect strangers. Contributions therefore:
+<dfn>**Contributions** start with **community conversations** that lead to **positive change.**</dfn> Open source provides a flexible collaboration model that facilitates change, even among perfect strangers. Contributions therefore:
 
-  1. Begin with __Issues__,
-  2. Occur in __Pull Requests__, and
-  3. End with __Merges__.
+  1. Begin with **Issues**,
+  2. Occur in **Pull Requests**, and
+  3. End with **Merges**.
 
 ## Table of contents
 
@@ -21,19 +21,19 @@
   * [1.4. Label the issue (optional).](#14-label-the-issue-optional)
   * [1.5. Monitor your issue for questions.](#15-monitor-your-issue-for-questions)
   * [1.6. Your issue will be either accepted for work, or declined.](#16-your-issue-will-be-either-accepted-for-work-or-declined)
-- [2. __Git__](#2-__git__)
-  * [2.1. __Rules__](#21-__rules__)
+- [2. **Git**](#2-git)
+  * [2.1. **Rules**](#21-rules)
     + [2.1.1. Makes changes in a topic branch.](#211-makes-changes-in-a-topic-branch)
     + [2.1.2. Favor the topic branch naming recommendation `type/issue-change-name`.](#212-favor-the-topic-branch-naming-recommendation-typeissue-change-name)
     + [2.1.3. Branch out from `master`.](#213-branch-out-from-master)
-    + [2.1.4. __*Never*__ push into the `master` branch. __*Always*__ submit a Pull Request.](#214-__never__-push-into-the-master-branch-__always__-submit-a-pull-request)
+    + [2.1.4. ***Never*** push into the `master` branch. ***Always*** submit a Pull Request.](#214-never-push-into-the-master-branch-always-submit-a-pull-request)
     + [2.1.5. Submit a Pull Request as soon as possible.](#215-submit-a-pull-request-as-soon-as-possible)
     + [2.1.6. Rebase your local `master` branch before you ask for PR approvals.](#216-rebase-your-local-master-branch-before-you-ask-for-pr-approvals)
     + [2.1.7. Resolve rebase conflicts before Pull Request reviews.](#217-resolve-rebase-conflicts-before-pull-request-reviews)
     + [2.1.8. Add reviewers and the label `Status: Needs Review` when the topic branch is ready.](#218-add-reviewers-and-the-label-status-needs-review-when-the-topic-branch-is-ready)
     + [2.1.9. Delete local and remote topic branches after merging.](#219-delete-local-and-remote-topic-branches-after-merging)
     + [2.1.10. Protect your `master` branch.](#2110-protect-your-master-branch)
-  * [2.2. __Feature-branch-workflow__](#22-__feature-branch-workflow__)
+  * [2.2. **Feature-branch-workflow**](#22-feature-branch-workflow)
     + [2.2.1. Initialize a Git repository in the product directory (_for new repositories only_).](#221-initialize-a-git-repository-in-the-product-directory-_for-new-repositories-only_)
     + [2.2.2. Checkout a new `feat`ure or `fix` branch.](#222-checkout-a-new-feature-or-fix-branch)
     + [2.2.3. Make Changes.](#223-make-changes)
@@ -45,23 +45,23 @@
     + [2.2.9. Submit a Pull Request.](#229-submit-a-pull-request)
     + [2.2.10. Once accepted, the Pull request will be merged, closed, and deleted by an administrator.](#2210-once-accepted-the-pull-request-will-be-merged-closed-and-deleted-by-an-administrator)
     + [2.2.11. Remove your local topic branch if you're done.](#2211-remove-your-local-topic-branch-if-youre-done)
-  * [2.3. __Tell your boss how Git enables collaborative process models.__](#23-__tell-your-boss-how-git-enables-collaborative-process-models__)
+  * [2.3. **Tell your boss how Git enables collaborative process models.**](#23-tell-your-boss-how-git-enables-collaborative-process-models)
     + [2.3.1. Explain that inner and open source are _process models_.](#231-explain-that-inner-and-open-source-are-_process-models_)
     + [2.3.2. Describe a typical Git workflow in collaborative terms.](#232-describe-a-typical-git-workflow-in-collaborative-terms)
-- [3. __Code standards__](#3-__code-standards__)
+- [3. **Code standards**](#3-code-standards)
   * [3.1. Use the Standard JS Style.](#31-use-the-standard-js-style)
   * [3.2. Use ESLint to analyze source code.](#32-use-eslint-to-analyze-source-code)
-- [4. __Unit testing__](#4-__unit-testing__)
+- [4. **Unit testing**](#4-unit-testing)
   * [4.1. Write Jest tests.](#41-write-jest-tests)
   * [4.2. Reach 100% code coverage.](#42-reach-100%25-code-coverage)
-- [5. __Directory structure__](#5-__directory-structure__)
-- [6. __Logging__](#6-__logging__)
-- [7. __Dependencies__](#7-__dependencies__)
-- [8. __APIs__](#8-__apis__)
-  * [8.1 __API design__](#81-__api-design__)
-  * [8.2 __API security__](#82-__api-security__)
-  * [8.3 __API documentation__](#83-__api-documentation__)
-- [9. __Licensing__](#9-__licensing__)
+- [5. **Directory structure**](#5-directory-structure)
+- [6. **Logging**](#6-logging)
+- [7. **Dependencies**](#7-dependencies)
+- [8. **APIs**](#8-apis)
+  * [8.1 **API design**](#81-api-design)
+  * [8.2 **API security**](#82-api-security)
+  * [8.3 **API documentation**](#83-api-documentation)
+- [9. **Licensing**](#9-licensing)
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
 
@@ -70,7 +70,7 @@
 
 ![Issues][icon-issue-image]
 
-* __Collaboration starts with *Issues*. Changes happen through *Pull Requests*.__
+* **Collaboration starts with *Issues*. Changes happen through *Pull Requests*.**
 
     View `getting-started-inner-source's` collaboration and contribution flowcharts:
 
@@ -164,7 +164,7 @@
       </tr>
       <tr>
       <td><code>CLA: Unsigned</code></td>
-      <td><dfn>The person who submitted a product change has __<em>not</em>__signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
+      <td><dfn>The person who submitted a product change has **<em>not</em>**signed your Contributor License Agreement.</dfn><br><br>Remove this label if your product owner does not require a CLA.</td>
       </tr>
       <tr>
       <td><code>Priority: Critical</code></td>
@@ -305,11 +305,11 @@
     > Otherwise, your issue will be politely declined.
 
 
-## 2. __Git__
+## 2. **Git**
 
 ![Git Logo][icon-git-logo-image]
 
-* ### 2.1. __Rules__
+* ### 2.1. **Rules**
 
   `getting-started-inner-source` manages contributions with the  [feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow).
 
@@ -366,7 +366,7 @@
     _Why:_
     > ⌦ `getting-started-inner-source` follows the feature-branch-workflow.
 
-* #### 2.1.4. __*Never*__ push into the `master` branch. __*Always*__ submit a Pull Request.
+* #### 2.1.4. ***Never*** push into the `master` branch. ***Always*** submit a Pull Request.
 
     _Why:_
     > ⌦ It notifies team members whenever changes occur and allows the community to review your changes at any time..
@@ -410,7 +410,7 @@
     > * [GitHub protected branches](https://help.github.com/articles/about-protected-branches/) and
     > * [Bitbucket protected branches](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html).
 
-* ### 2.2. __Feature-branch-workflow__
+* ### 2.2. **Feature-branch-workflow**
 
   We use the  [feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow). We _recommend_ [interactive rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing), too, but that's not required.
 
@@ -452,7 +452,7 @@
   _Why:_
   > Consistent, legible Git logs not only facilitate communication, but also enable automated `CHANGELOG` generation and semantic versioning with [`standard-version`][standard-version-url].
 
-  * __`build` commit messages__
+  * **`build` commit messages**
 
     Issues related to product builds.
 
@@ -464,7 +464,7 @@
     <footer>
     ```
 
-  * __`chore` commit messages__
+  * **`chore` commit messages**
 
     Issues related to miscellaneous non-functional changes (usually "maintenance" changes).
 
@@ -476,7 +476,7 @@
     <footer>
     ```
 
-  * __`ci` commit messages__
+  * **`ci` commit messages**
 
     Issues related to continuous integration, delivery, and deployment tasks.
 
@@ -488,7 +488,7 @@
     <footer>
     ```
 
-  * __`docs` commit messages__
+  * **`docs` commit messages**
 
     Issues related to documentation.
 
@@ -500,7 +500,7 @@
     <footer>
     ```
 
-  * __`feat` (feature) commit messages__
+  * **`feat` (feature) commit messages**
 
     New feature or enhancement requests.
 
@@ -512,7 +512,7 @@
     <footer>
     ```
 
-  * __`fix` commit messages__
+  * **`fix` commit messages**
 
     Defect (bug) repair issues.
 
@@ -524,7 +524,7 @@
     <footer>
     ```
 
-  * __`perf` (performance) commit messages__
+  * **`perf` (performance) commit messages**
 
     Performance improvement issues.
 
@@ -536,7 +536,7 @@
     <footer>
     ```
 
-  * __`refactor` commit messages__
+  * **`refactor` commit messages**
 
     Source code design **improvements that do not affect product behavior**.
 
@@ -548,7 +548,7 @@
     <footer>
     ```
 
-  * __`revert` commit messages__
+  * **`revert` commit messages**
 
     Tasks that revert to a previous commit hash. Your message should begin with `revert:`, followed by the header of the reverted commit.
 
@@ -562,7 +562,7 @@
     <footer>
     ```
 
-  * __`style` commit messages__
+  * **`style` commit messages**
 
     Issues related to style guideline compliance, especially `ESLint` errors and warnings.
 
@@ -574,7 +574,7 @@
     <footer>
     ```
 
-  * __`test` commit messages__
+  * **`test` commit messages**
 
     Test coverage tasks.
 
@@ -649,11 +649,11 @@
     done
   ```
 
-### 2.3. __Tell your boss how Git enables collaborative process models.__
+### 2.3. **Tell your boss how Git enables collaborative process models.**
 
 ![Leadership](../docs/img/icons8/icon-leadership-filled.png)
 
-* __Git enables collaboration with structured (business) process models.__ Git is a collaboration tool that grants people the opportunity to contribute to software products using simple and consistent process models called workflows.
+* **Git enables collaboration with structured (business) process models.** Git is a collaboration tool that grants people the opportunity to contribute to software products using simple and consistent process models called workflows.
 
   ---
 
@@ -661,13 +661,13 @@
   <summary><img src="../docs/img/icons8/icon-help-48.png" alt="Help" align="middle" height="48" width="48"> Toggle view of a workflow example.</summary><br>
   <p>⌦ Git is a collaboration tool that grants people the opportunity to contribute to software products using simple and consistent process models called _workflows_.
   <ol>
-  <li>Git __repositories__ store software products, as well as the historical changes to these products.<br><br>
-  <li>Git workflows begin with either __cloning__ or __forking__ a repository, which __pulls__ a duplicate of the entire codebase onto a local computer.<br><br>
-  <li>Contributors then create a local __topic branch__ in which they introduce changes—-features, fixes, documentation, tests, and design improvements—-which allows others to develop in parallel.<br><br>
-  <li>Contributors __push__ their topic branch to others (usually another `remote` repository called `origin`) and submit __pull requests (PRs)__ to their announce their changes. __Pull requests are central to almost all Git workflows, since PRs allow Product Owners and their community to review suggested modifications. Product owners can approve or reject PRs at any time.__<br><br>
-  <li>Other contributors answer the request to __pull__ the changes so they can review and test them.<br><br>
+  <li>Git **repositories** store software products, as well as the historical changes to these products.<br><br>
+  <li>Git workflows begin with either **cloning** or **forking** a repository, which **pulls** a duplicate of the entire codebase onto a local computer.<br><br>
+  <li>Contributors then create a local **topic branch** in which they introduce changes—-features, fixes, documentation, tests, and design improvements—-which allows others to develop in parallel.<br><br>
+  <li>Contributors **push** their topic branch to others (usually another `remote` repository called `origin`) and submit **pull requests (PRs)** to their announce their changes. **Pull requests are central to almost all Git workflows, since PRs allow Product Owners and their community to review suggested modifications. Product owners can approve or reject PRs at any time.**<br><br>
+  <li>Other contributors answer the request to **pull** the changes so they can review and test them.<br><br>
   <li>The changes in the PR are approved.<br><br>
-  <li>The topic branch is either __merged__ or __rebased__ into the the software product.<br><br>
+  <li>The topic branch is either **merged** or **rebased** into the the software product.<br><br>
   <li>The topic branch gets deleted, and (ultimately) its changes are delivered to the world.
   </ol>
   </details>
@@ -680,14 +680,14 @@
 * #### 2.3.1. Explain that inner and open source are _process models_.
 
   _Why:_
-  > ⌦ Git is a __collaboration__ tool that grants people the opportunity to contribute to software products using simple and consistent process models called __workflows.__
+  > ⌦ Git is a **collaboration** tool that grants people the opportunity to contribute to software products using simple and consistent process models called **workflows.**
 
 * #### 2.3.2. Describe a typical Git workflow in collaborative terms.
 
   _Why:_
   > ⌦ Many engineers can discuss Git's _technicalities_, but cannot articulate Git's as an applied _technology_ for collaboration.
 
-## 3. __Code standards__
+## 3. **Code standards**
 
 [![JavaScript Style Guide][standard-js-badge-image]][standard-js-url] [![ESLint logo][eslint-logo-image]][eslint-url]
 
@@ -707,7 +707,7 @@
 
   View [`getting-started-inner-source's` ESLint rules][eslint-rules-table-url] and their enforcement.
 
-## 4. __Unit testing__
+## 4. **Unit testing**
 
 [![Jest JavaScript Testing][jest-logo-image]][jest-url]
 
@@ -716,9 +716,9 @@
   _Why:_
   > ⌦ Behavior-driven development specifications are executable documentation.
 
-  * **Put test files in the \__test\__ directory.**
+  * **Put test files in the \**test\** directory.**
 
-  * __Use the `.spec.js` suffix for all tests.__
+  * **Use the `.spec.js` suffix for all tests.**
 
 * ### 4.2. Reach 100% code coverage.
 
@@ -732,7 +732,7 @@
 
     > jest --config=jest.config.json
 
-      PASS  __tests__/app.js
+      PASS  **tests**/app.js
        getting-started-inner-source:app
         ✓ creates files (1ms)
 
@@ -751,12 +751,12 @@
 
   * Open `/coverage/lcov-report/index.html` in a Web browser to view detailed coverage reports.
 
-## 5. __Directory structure__
+## 5. **Directory structure**
 
 
-## 6. __Logging__
+## 6. **Logging**
 
-## 7. __Dependencies__
+## 7. **Dependencies**
 
 ![Package tech stack][tech-stack-image]
 
@@ -765,56 +765,45 @@
 `getting-started-inner-source` requires the following tech stack to either run, build, test, or deploy:
 
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
-| **Dependency** | **Description** | **Version** | **Type** |
-| -------------- | --------------- | ----------- | -------- |
- | [generator-license@5.1.0](https://github.com/jozefizso/generator-license) | License generator for Yeoman based projects. | 5.1.0 | production |
- | [generator-node@2.2.0](https://github.com/yeoman/generator-node) | Create a Node.js module | 2.2.0 | production |
- | [git-remote-origin-url@2.0.0](https://github.com/sindresorhus/git-remote-origin-url#readme) | Get the remote origin url of a git repository | 2.0.0 | production |
- | [git-url-parse@7.0.1](https://github.com/IonicaBizau/git-url-parse) | A high level git url parser for common git providers. | 7.0.1 | production |
- | [github-username@4.1.0](https://github.com/sindresorhus/github-username#readme) | Get a GitHub username from an email address | 4.1.0 | production |
- | [inquirer-npm-name@2.0.0](https://github.com/SBoudrias/inquirer-npm-name#readme) | Helper function using inquirer to validate a value provided in a prompt does not exist as an npm package. | 2.0.0 | production |
- | [lodash@^4.17.4](https://lodash.com/) | Lodash modular utilities. | 4.17.4 | production |
- | [markdown-magic@0.1.18](https://npmjs.org/package/markdown-magic) | Automatically update markdown files with content from external sources | 0.1.18 | production |
- | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | production |
- | [markdown-magic-package-scripts@1.2.0](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.0 | production |
- | [parse-author@2.0.0](https://github.com/jonschlinkert/parse-author) | Parse an author, contributor, maintainer or other 'person' string into an object with name, email and url properties following npm conventions. | 2.0.0 | production |
- | [update-notifier@2.2.0](https://github.com/yeoman/update-notifier#readme) | Update notifications for your CLI app | 2.2.0 | production |
- | [yeoman-generator@2.0.0](http://yeoman.io) | Rails-inspired generator system that provides scaffolding for your apps | 2.0.0 | production |
- | [babel-jest@21.0.2](https://github.com/facebook/jest#readme) | Jest plugin to use babel for transformation. | 21.0.2 | dev |
- | [babel-preset-env@1.6.0](https://babeljs.io/) | A Babel preset for each environment. | 1.6.0 | dev |
- | [babelify@7.3.0](https://github.com/babel/babelify) | Babel browserify transform | 7.3.0 | dev |
- | [check-node-version@2.1.0](https://github.com/parshap/check-node-version#readme) | Check installed versions of node and npm | 2.1.0 | dev |
- | [commitplease@2.7.10](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 2.7.10 | dev |
- | [coveralls@^2.13.1](https://github.com/nickmerwin/node-coveralls#readme) | takes json-cov output into stdin and POSTs to coveralls.io | 2.13.1 | dev |
- | [eslint@4.7.2](http://eslint.org) | An AST-based pattern checker for JavaScript. | 4.7.2 | dev |
- | [eslint-config-xo-space@0.16.0](https://github.com/sindresorhus/eslint-config-xo-space#readme) | ESLint shareable config for XO with 2-space indent | 0.16.0 | dev |
- | [eslint-plugin-import@2.7.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.7.0 | dev |
- | [eslint-plugin-jest@21.1.0](https://github.com/facebook/jest#readme) | Eslint rules for Jest | 21.1.0 | dev |
- | [eslint-plugin-jsdoc@3.1.3](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.1.3 | dev |
- | [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML | 1.0.16 | dev |
- | [eslint-plugin-no-unsanitized@2.0.1](https://github.com/mozilla/eslint-plugin-no-unsanitized/) | ESLint rule to disallow unsanitized code | 2.0.1 | dev |
- | [eslint-plugin-node@5.1.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 5.1.1 | dev |
- | [eslint-plugin-promise@3.5.0](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 3.5.0 | dev |
- | [eslint-plugin-scanjs-rules@0.2.1](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules/) | ESLint plugin that contains ScanJS rules | 0.2.1 | dev |
- | [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme) | Security rules for eslint | 1.4.0 | dev |
- | [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 3.0.1 | dev |
- | [eslint-plugin-xss@0.1.8](https://npmjs.org/package/eslint-plugin-xss) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.8 | dev |
- | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | dev |
- | [jest@21.1.0](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 21.1.0 | dev |
- | [jest-cli@21.1.0](http://facebook.github.io/jest/) | Delightful JavaScript Testing. | 21.1.0 | dev |
- | [markdown-toc@1.2.0](https://github.com/jonschlinkert/markdown-toc) | Generate a markdown TOC (table of contents) with Remarkable. | 1.2.0 | dev |
- | [nsp@2.8.0](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 2.8.0 | dev |
- | [standard-version@4.2.0](https://github.com/conventional-changelog/standard-version#readme) | replacement for `npm version` with automatic CHANGELOG generation | 4.2.0 | dev |
- | [yeoman-assert@3.1.0](http://yeoman.io) | Assert utility from yeoman | 3.1.0 | dev |
- | [yeoman-test@1.7.0](http://yeoman.io/authoring/testing.html) | Test utilities for Yeoman generators | 1.7.0 | dev |
+| **Dependency** | **Description** | **Version** | **License** | **Type** |
+| -------------- | --------------- | ----------- | ----------- | -------- |
+ | [@semantic-release/changelog@1.0.1](https://github.com/semantic-release/changelog#readme) | Set of semantic-release plugins for creating or updating a changelog file | 1.0.1 | MIT | dev | 
+ | [@semantic-release/git@3.0.1](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 3.0.1 | MIT | dev | 
+ | [@semantic-release/npm@3.0.2](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 3.0.2 | MIT | dev | 
+ | [ajv@6.2.0](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.2.0 | MIT | dev | 
+ | [ajv-keywords@3.1.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.1.0 | MIT | dev | 
+ | [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 3.2.0 | MIT | dev | 
+ | [eslint@4.18.1](https://eslint.org) | An AST-based pattern checker for JavaScript. | 4.18.1 | MIT | dev | 
+ | [eslint-config-scanjs@1.0.0-beta4](https://github.com/mozfreddyb/eslint-config-scanjs#readme) | umbrella config to get scanjs-like functionality from eslint | 1.0.0-beta4 | MPL-2.0 | dev | 
+ | [eslint-config-standard@11.0.0](https://github.com/standard/eslint-config-standard) | JavaScript Standard Style - ESLint Shareable Config | 11.0.0 | MIT | dev | 
+ | [eslint-config-xo-space@0.18.0](https://github.com/xojs/eslint-config-xo-space#readme) | ESLint shareable config for XO with 2-space indent | 0.18.0 | MIT | dev | 
+ | [eslint-plugin-import@2.9.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.9.0 | MIT | dev | 
+ | [eslint-plugin-jsdoc@3.5.0](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.5.0 | BSD-3-Clause | dev | 
+ | [eslint-plugin-json@1.2.0](https://github.com/azeemba/eslint-plugin-json#readme) | Lint JSON files | 1.2.0 | ISC | dev | 
+ | [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML | 1.0.16 | MPL-2.0 | dev | 
+ | [eslint-plugin-no-unsanitized@3.0.0](https://github.com/mozilla/eslint-plugin-no-unsanitized/) | ESLint rule to disallow unsanitized code | 3.0.0 | MPL-2.0 | dev | 
+ | [eslint-plugin-node@6.0.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 6.0.1 | MIT | dev | 
+ | [eslint-plugin-promise@3.6.0](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 3.6.0 | ISC | dev | 
+ | [eslint-plugin-scanjs-rules@0.2.1](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules/) | ESLint plugin that contains ScanJS rules | 0.2.1 | MPL-2.0 | dev | 
+ | [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme) | Security rules for eslint | 1.4.0 | Apache-2.0 | dev | 
+ | [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 3.0.1 | MIT | dev | 
+ | [eslint-plugin-unicorn@4.0.2](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 4.0.2 | MIT | dev | 
+ | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
+ | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
+ | [markdown-magic@0.1.20](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.20 | MIT | dev | 
+ | [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme) | Generate table of information about dependencies automatically in markdown | 1.3.2 | MIT | dev | 
+ | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | MIT | dev | 
+ | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
+ | [nsp@3.2.1](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 3.2.1 | Apache-2.0 | dev | 
+ | [semantic-release@13.4.1](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 13.4.1 | MIT | dev | 
 <!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-## 8. __APIs__
+## 8. **APIs**
 
 ![APIs][icon-rest-api-image]
 
-* ### 8.1 __API design__
+* ### 8.1 **API design**
 
   _Why:_
   > ⌦ Because we try to enforce development of sanely constructed RESTful interfaces, which team members and clients can consume simply and consistently.
@@ -998,7 +987,7 @@
       ```
   * Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
 
-* ### 8.2 __API security__
+* ### 8.2 **API security**
 
   These are some basic security best practices:
 
@@ -1034,7 +1023,7 @@
       _Why:_
       > ⌦ For instance, accepting the `application/x-www-form-urlencoded` mime type allows the attacker to create a form and trigger a simple POST request. The server should never assume the Content-Type. A lack of Content-Type header or an unexpected Content-Type header should result in the server rejecting the content with a `4XX` response.
 
-* ### 8.3 __API documentation__
+* ### 8.3 **API documentation**
 
   * Fill the `API Reference` section in [README.md template](./README.sample.md) for API.
   * Describe API authentication methods with a code sample.
@@ -1050,21 +1039,21 @@
 
   * If the request type is POST, provide working examples. URL Params rules apply here too. Separate the section into Optional and Required.
 
-  * __Success Responses.__ What should be the status code and is there any return data? This is useful when people need to know what their callbacks should expect:
+  * **Success Responses.** What should be the status code and is there any return data? This is useful when people need to know what their callbacks should expect:
 
       ```
       Code: 200
       Content: { id : 12 }
       ```
 
-  * __Error Responses.__ Most endpoints have many ways to fail. From unauthorized access to wrongful parameters etc. All of those should be listed here. It might seem repetitive, but it helps prevent assumptions from being made. For example:
+  * **Error Responses.** Most endpoints have many ways to fail. From unauthorized access to wrongful parameters etc. All of those should be listed here. It might seem repetitive, but it helps prevent assumptions from being made. For example:
 
-    * __HTTP status code__
+    * **HTTP status code**
       ```
       404 Not Found
       ```
 
-    * __Response body__
+    * **Response body**
       ```json
       {
         "code"     : 404,
@@ -1075,7 +1064,7 @@
       }
       ```
 
-    * __Response headers__
+    * **Response headers**
       ```
       accept-ranges: bytes
       access-control-allow-headers: Authorization
@@ -1095,7 +1084,7 @@
 
   * Use API design tools, There are lots of open source tools for good documentation such as [API Blueprint](https://apiblueprint.org/) and [Swagger](https://swagger.io/).
 
-## 9. __Licensing__
+## 9. **Licensing**
 
 ![Licensing][osi-logo-image]
 
@@ -1135,8 +1124,8 @@
 [icon-issue-image]: ../docs/img/icons8/icon-issues.png
 [icon-pr-image]: ../docs/img/icons8/icon-pr.png
 [icon-rest-api-image]: ../docs/img/icons8/icon-rest-api.png
-[issues-new-defect-url]: https://github.com/commonality/getting-started-inner-source/issues/new?title=fix%28affected-scope%29%3A+subject-line-with-very-few-words&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Defect&body=%2A%2A%F0%9F%92%A1+TIP%3A%2A%2A+Select+the+%E2%86%96%EF%B8%8E%E2%8E%BE+Preview+%E2%8F%8B+Tab+above+help+read+these+instructions.%0D%0A%0D%0A%23%23+1.+Issue+type%0D%0A%3E%E2%8C%A6+Type+the+letter+%22x%22+in+the+%22checkbox%22+the+best+describe+this+issue.%0D%0A%0D%0A-+%5Bx%5D+__Feature%3A__+I%27m+requesting+a+product+enhancement.%0D%0A%0D%0A%23%23+2.+User+story+summary%0D%0A%3E%E2%8C%A6+Describe+what+you+want+to+accomplish%2C+in+what+role%2Fcapacity%2C+and+why+it%27s+important+to+you.%0D%0A%0D%0A%3E+__EXAMPLE%3A__%0D%0A%3E+As+a+Applicant%2C%0D%0A%3E+I+want+to+submit+my+resume%0D%0A%3E+In+order+to+be+considered+for+a+job+opening.%0D%0A%0D%0AAs+a+%7Brole%7D%2C%0D%0AI+must%2Fneed%2Fwant%2Fshould+%7Bdo+something%7D%0D%0AIn+order+to+%7Bachieve+value%7D.%0D%0A%0D%0A%23%23+3.+Acceptance+criteria%0D%0A%3E%E2%8C%A6+Replace+the+examples+below+with+your+own+imperative%2C+%22true%2Ffalse%22+statements+for+the+__behavior+you+expect__+to+see%2C+or+the+behavior+that+__would__+be+true+if+there+were+no+errors+%28for+defects%29.%0D%0A%0D%0A-+%5B+%5D+1.+Job+Applicants+receive+a+confirmation+email+after+they+submit+their+resumes.%0D%0A-+%5B+%5D+2.+An+Applicant%27s+resume+information+isn%27t+lost+when+errors+occur.%0D%0A-+%5B+%5D+3.+%7Bcriterion-three%7D%0D%0A-+%5B+%5D+4.+%7Bcriterion-four%7D%0D%0A%0D%0A%3C%21--+%E2%9B%94%EF%B8%8F++Do+not+remove+anything+below+this+comment.+%E2%9B%94%EF%B8%8F++--%3E%0D%0A%5Bicon-info-image%5D%3A+..%2Fdocs%2Fimg%2Ficons8%2Ficon-info-50.png%0D%0A
-[issues-new-feat-url]: https://github.com/commonality/getting-started-inner-source/issues/new?title=feat%28affected-scope%29%3A+subject-line-with-very-few-words&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Feature&body=%2A%2A%F0%9F%92%A1+TIP%3A%2A%2A+Select+the+%E2%86%96%EF%B8%8E%E2%8E%BE+Preview+%E2%8F%8B+Tab+above+help+read+these+instructions.%0D%0A%0D%0A%23%23+1.+Issue+type%0D%0A%3E%E2%8C%A6+Type+the+letter+%22x%22+in+the+%22checkbox%22+the+best+describe+this+issue.%0D%0A%0D%0A-+%5Bx%5D+__Feature%3A__+I%27m+requesting+a+product+enhancement.%0D%0A%0D%0A%23%23+2.+User+story+summary%0D%0A%3E%E2%8C%A6+Describe+what+you+want+to+accomplish%2C+in+what+role%2Fcapacity%2C+and+why+it%27s+important+to+you.%0D%0A%0D%0A%3E+__EXAMPLE%3A__%0D%0A%3E+As+a+Applicant%2C%0D%0A%3E+I+want+to+submit+my+resume%0D%0A%3E+In+order+to+be+considered+for+a+job+opening.%0D%0A%0D%0AAs+a+%7Brole%7D%2C%0D%0AI+must%2Fneed%2Fwant%2Fshould+%7Bdo+something%7D%0D%0AIn+order+to+%7Bachieve+value%7D.%0D%0A%0D%0A%23%23+3.+Acceptance+criteria%0D%0A%3E%E2%8C%A6+Replace+the+examples+below+with+your+own+imperative%2C+%22true%2Ffalse%22+statements+for+the+__behavior+you+expect__+to+see%2C+or+the+behavior+that+__would__+be+true+if+there+were+no+errors+%28for+defects%29.%0D%0A%0D%0A-+%5B+%5D+1.+Job+Applicants+receive+a+confirmation+email+after+they+submit+their+resumes.%0D%0A-+%5B+%5D+2.+An+Applicant%27s+resume+information+isn%27t+lost+when+errors+occur.%0D%0A-+%5B+%5D+3.+%7Bcriterion-three%7D%0D%0A-+%5B+%5D+4.+%7Bcriterion-four%7D%0D%0A%0D%0A%3C%21--+%E2%9B%94%EF%B8%8F++Do+not+remove+anything+below+this+comment.+%E2%9B%94%EF%B8%8F++--%3E%0D%0A%5Bicon-info-image%5D%3A+..%2Fdocs%2Fimg%2Ficons8%2Ficon-info-50.png%0D%0A
+[issues-new-defect-url]: https://github.com/commonality/getting-started-inner-source/issues/new?title=fix%28affected-scope%29%3A+subject-line-with-very-few-words&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Defect&body=%2A%2A%F0%9F%92%A1+TIP%3A%2A%2A+Select+the+%E2%86%96%EF%B8%8E%E2%8E%BE+Preview+%E2%8F%8B+Tab+above+help+read+these+instructions.%0D%0A%0D%0A%23%23+1.+Issue+type%0D%0A%3E%E2%8C%A6+Type+the+letter+%22x%22+in+the+%22checkbox%22+the+best+describe+this+issue.%0D%0A%0D%0A-+%5Bx%5D+**Feature%3A**+I%27m+requesting+a+product+enhancement.%0D%0A%0D%0A%23%23+2.+User+story+summary%0D%0A%3E%E2%8C%A6+Describe+what+you+want+to+accomplish%2C+in+what+role%2Fcapacity%2C+and+why+it%27s+important+to+you.%0D%0A%0D%0A%3E+**EXAMPLE%3A**%0D%0A%3E+As+a+Applicant%2C%0D%0A%3E+I+want+to+submit+my+resume%0D%0A%3E+In+order+to+be+considered+for+a+job+opening.%0D%0A%0D%0AAs+a+%7Brole%7D%2C%0D%0AI+must%2Fneed%2Fwant%2Fshould+%7Bdo+something%7D%0D%0AIn+order+to+%7Bachieve+value%7D.%0D%0A%0D%0A%23%23+3.+Acceptance+criteria%0D%0A%3E%E2%8C%A6+Replace+the+examples+below+with+your+own+imperative%2C+%22true%2Ffalse%22+statements+for+the+**behavior+you+expect**+to+see%2C+or+the+behavior+that+**would**+be+true+if+there+were+no+errors+%28for+defects%29.%0D%0A%0D%0A-+%5B+%5D+1.+Job+Applicants+receive+a+confirmation+email+after+they+submit+their+resumes.%0D%0A-+%5B+%5D+2.+An+Applicant%27s+resume+information+isn%27t+lost+when+errors+occur.%0D%0A-+%5B+%5D+3.+%7Bcriterion-three%7D%0D%0A-+%5B+%5D+4.+%7Bcriterion-four%7D%0D%0A%0D%0A%3C%21--+%E2%9B%94%EF%B8%8F++Do+not+remove+anything+below+this+comment.+%E2%9B%94%EF%B8%8F++--%3E%0D%0A%5Bicon-info-image%5D%3A+..%2Fdocs%2Fimg%2Ficons8%2Ficon-info-50.png%0D%0A
+[issues-new-feat-url]: https://github.com/commonality/getting-started-inner-source/issues/new?title=feat%28affected-scope%29%3A+subject-line-with-very-few-words&labels=Priority%3A+Medium%2CStatus%3A+Review+Needed%2CType%3A+Feature&body=%2A%2A%F0%9F%92%A1+TIP%3A%2A%2A+Select+the+%E2%86%96%EF%B8%8E%E2%8E%BE+Preview+%E2%8F%8B+Tab+above+help+read+these+instructions.%0D%0A%0D%0A%23%23+1.+Issue+type%0D%0A%3E%E2%8C%A6+Type+the+letter+%22x%22+in+the+%22checkbox%22+the+best+describe+this+issue.%0D%0A%0D%0A-+%5Bx%5D+**Feature%3A**+I%27m+requesting+a+product+enhancement.%0D%0A%0D%0A%23%23+2.+User+story+summary%0D%0A%3E%E2%8C%A6+Describe+what+you+want+to+accomplish%2C+in+what+role%2Fcapacity%2C+and+why+it%27s+important+to+you.%0D%0A%0D%0A%3E+**EXAMPLE%3A**%0D%0A%3E+As+a+Applicant%2C%0D%0A%3E+I+want+to+submit+my+resume%0D%0A%3E+In+order+to+be+considered+for+a+job+opening.%0D%0A%0D%0AAs+a+%7Brole%7D%2C%0D%0AI+must%2Fneed%2Fwant%2Fshould+%7Bdo+something%7D%0D%0AIn+order+to+%7Bachieve+value%7D.%0D%0A%0D%0A%23%23+3.+Acceptance+criteria%0D%0A%3E%E2%8C%A6+Replace+the+examples+below+with+your+own+imperative%2C+%22true%2Ffalse%22+statements+for+the+**behavior+you+expect**+to+see%2C+or+the+behavior+that+**would**+be+true+if+there+were+no+errors+%28for+defects%29.%0D%0A%0D%0A-+%5B+%5D+1.+Job+Applicants+receive+a+confirmation+email+after+they+submit+their+resumes.%0D%0A-+%5B+%5D+2.+An+Applicant%27s+resume+information+isn%27t+lost+when+errors+occur.%0D%0A-+%5B+%5D+3.+%7Bcriterion-three%7D%0D%0A-+%5B+%5D+4.+%7Bcriterion-four%7D%0D%0A%0D%0A%3C%21--+%E2%9B%94%EF%B8%8F++Do+not+remove+anything+below+this+comment.+%E2%9B%94%EF%B8%8F++--%3E%0D%0A%5Bicon-info-image%5D%3A+..%2Fdocs%2Fimg%2Ficons8%2Ficon-info-50.png%0D%0A
 [issues-url]: https://github.com/commonality/getting-started-inner-source/issues
 [jest-logo-image]: ../docs/img/logo-jest.png
 [jest-url]: https://facebook.github.io/jest/
