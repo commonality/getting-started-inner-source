@@ -24,7 +24,7 @@ We need to record the architectural decisions made on this project, since:
 
 ## Decision
 
-We will document every architecture-level decision for Arachne and its core modules with an [Architecture Decision Record][nygard-article-url]. These are a well structured, relatively lightweight way to capture architectural proposals. They can serve as an artifact for discussion, and remain as an enduring record of the context and motivation of past decisions.
+We will document every architecture-level decision for `getting-started-inner-source` and its core modules with an [Architecture Decision Record][nygard-article-url]. These are a well structured, relatively lightweight way to capture architectural proposals. They can serve as an artifact for discussion, and remain as an enduring record of the context and motivation of past decisions.
 
 The workflow will be:
 
@@ -40,7 +40,7 @@ The workflow will be:
 
 ## Consequences
 
-1. Developers must write an ADR and submit it for review before selecting an approach to any architectural decision -- that is, any decision that affects the way Arachne or an Arachne application is put together at a high level.
+1. Developers must write an ADR and submit it for review before selecting an approach to any architectural decision -- that is, any decision that affects the way `commonality` or an `commonality` application is put together at a high level.
 
 1. We will have a concrete artifact around which to focus discussion, before finalizing decisions.
 
