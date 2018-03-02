@@ -1,0 +1,6 @@
+{
+  "path":"docs/adr/",
+  "language":"en-us",
+  "prefix": "adr",
+  "digits": 4
+}

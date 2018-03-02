@@ -26,11 +26,15 @@
     "scope": "\\S+.*"
   },
   "contributors": [],
-  "dependencies": {},
+  "dependencies": {
+    "adr": "1.0.7"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "1.0.1",
     "@semantic-release/git": "3.0.1",
     "@semantic-release/npm": "3.0.2",
+    "ajv": "6.2.0",
+    "ajv-keywords": "3.1.0",
     "commitplease": "3.2.0",
     "eslint": "4.18.1",
     "eslint-config-scanjs": "1.0.0-beta4",
@@ -54,7 +58,7 @@
     "markdown-magic-install-command": "1.3.1",
     "markdown-magic-package-scripts": "1.2.1",
     "nsp": "3.2.1",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "13.4.1"
   },
   "directories": {
     "doc": "./docs"
@@ -92,6 +96,13 @@
     "url": "https://github.com/commonality/getting-started-inner-source.git"
   },
   "scripts": {
+    "adr:export:csv": "adr export csv",
+    "adr:export:html": "adr export html",
+    "adr:export:json": "adr export json",
+    "adr:export:markdown": "adr export markdown",
+    "adr:graph": "adr generate graph",
+    "adr:list": "adr list",
+    "adr:toc": "adr generate toc",
     "docs": "npm run docs:toc",
     "docs:toc": "md-magic --path '**/*.md' --ignore 'node_modules'",
     "lint": "npm run lint:js && npm run lint:manifest",
