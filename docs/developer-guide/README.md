@@ -66,7 +66,7 @@ npm install
 
 ---
 
-<details><summary><strong>View all <code>getting-started-inner-source</code> dependencies.</summary>
+<details><summary><strong>View all <code>getting-started-inner-source</code> dependencies.</strong></summary>
 
 <h3>Production dependencies</h3>
 
