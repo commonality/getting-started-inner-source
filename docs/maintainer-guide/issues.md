@@ -2,12 +2,12 @@
 
 # Managing Issues
 
-New issues are filed frequently, and how we respond to those issues directly affects the success of the project. Being part of the project team means helping to triage and address issues as they come in so the project can continue to run smoothly.
+> Responding quickly and gratefully to issues directly affects the success of the project. Being part of the project team means helping to triage and address issues as they come in so the project can continue to run smoothly.
 
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-- [1. Things to Keep in Mind](#1-things-to-keep-in-mind)
+- [1. Always build community](#1-always-build-community)
   * [1.1. Be nice](#11-be-nice)
   * [1.2. Be inquisitive](#12-be-inquisitive)
   * [1.3. Not all requests are equal](#13-not-all-requests-are-equal)
@@ -18,7 +18,8 @@ New issues are filed frequently, and how we respond to those issues directly aff
   * [2.3. Feature](#23-feature)
   * [2.4. Question](#24-question)
 - [3. When an Issue is opened](#3-when-an-issue-is-opened)
-  * [3.1. Triaging an Issue](#31-triaging-an-issue)
+  * [3.1. Prioritize the Issue](#31-prioritize-the-issue)
+  * [3.2. Categorize the Issue](#32-categorize-the-issue)
 - [4. Accepting Issues](#4-accepting-issues)
 - [5. Championing Issues](#5-championing-issues)
 - [6. Consensus](#6-consensus)
@@ -27,7 +28,9 @@ New issues are filed frequently, and how we respond to those issues directly aff
 - [9. When to Close an Issue](#9-when-to-close-an-issue)
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
-## 1. Things to Keep in Mind
+## 1. Always build community
+
+Here are things to keep in mind:
 
 ### 1.1. Be nice
 
@@ -86,53 +89,59 @@ Issues labeled with <kbd>status: triage</kbd> are the ones that need to be looke
 
   ---
 
-### 3.1. Triaging an Issue
+### 3.1. Prioritize the Issue
 
-The steps for triaging an issue are:
+The steps for prioritizing an issue are:
 
-1. **Is it clear what is being requested?**
+1. **Reply with a thankful comment.**
 
-    **_No:_**
+    _Why:_
 
-    > Add the "needs info" label to the issue. The bot will add a comment asking for more information. You don't need to comment any further until the person who opened the issue responds with the information requested from the bot.
+    > ![heart][octicon-heart] Someone _contributed their time_ to submit an issue, which means you've converted a _user_ into a _contributor!_ Either request more information (if necessary) or state your opinion about the issue.
+    >
+    > If it's a verified defect, ask if the user would like to submit a pull request.
 
-    **_Yes:_**
+1. **Verify your understanding of the Issue.** Is the Issue clear and understandable?
 
-    > 1. Remove the "triage" label
-    > 1. Label questions with the "question" label
-    > 1. Label defect reports with the "defect" label (also use the "accepted" label if you can reproduce and verify the defect, otherwise add the "evaluating" label to indicate someone needs to verify)
-    > 1. Label requests for changes to existing features (new rule options, new configuration options, etc.) with the "feature" and "evaluating" labels
-    > 1. Label requests for completely new features (new rules, supporting a new file format, etc.) with the "feature" and "evaluating" labels
-    > 1. Use an appropriate label for the part of the project the issue refers to:
-    >    1.  "build" - related to commands run during a build (testing, linting, release scripts, etc.)
-    >    1. "cli" - related to command line input or output, or to `CLIEngine`
-    >    1. "core" - related to internal APIs
-    >    1. "documentation" - related to content on eslint.org
-    >    1. "infrastructure" - related to resources needed for builds or deployment (VMs, CI tools, bots, etc.)
-1. **Once it's clear what type of issue it is, make sure all of the relevant information is provided:**
-    * **Defects**: See [defect reporting guidelines](/docs/developer-guide/contributing/reporting-defects)
-    * **New Rules:** See [rule proposal guidelines](/docs/developer-guide/contributing/new-rules)
-    * **Rule Changes:** See [rule change proposal guidelines](/docs/developer-guide/contributing/rule-changes)
-    * **Other Changes:** See [change proposal guidelines](/docs/developer-guide/contributing/changes)
-1. **Next steps:**
-    * **Questions:** answer the question and close the issue when the conversation is over.
-    * **Defects:** if you can verify the defect, add the "accepted" label and ask if they would like to submit a pull request.
-    * **New Rules:** if you are willing to champion the rule (meaning you believe it should be included in {product-name} core and you will take ownership of the process for including it), add a comment saying you will champion the issue, assign the issue to yourself, and follow the [guidelines](#championing-issues) below.
-    * **Rule Changes:** if you are willing to champion the change and it would not be a breaking change (requiring a major version increment), add a comment saying that you will champion the issue, assign the issue to yourself, and follow the [guidelines](#championing-issues) below.
-    * **Breaking Changes:** if you suspect or can verify that a change would be breaking, label it as "Breaking".
-    * **Duplicates:** if you can verify the issue is a duplicate, add a comment mentioning the duplicate issue (such as, "Duplicate of #1234") and close the issue.
-1. Regardless of the above, always leave a comment. Don't just add labels, engage with the person who opened the issue by asking a question (request more information if necessary) or stating your opinion of the issue. If it's a verified defect, ask if the user would like to submit a pull request.
+    _No:_
 
-**Note:** "Good first issue" issues are intended to help new contributors feel welcome and empowered to make a contribution to {product-name}. To ensure that new contributors are given a chance to work on these issues, issues labeled "good first issue" must be open for 30 days *from the day the issue was labeled* before a team member is permitted to work on them.
+    > Add the <kbd>status: revision needed</kbd> label to the issue. The bot will add a comment asking for more information. You don't need to comment any further until the person who opened the issue responds with the information requested from the bot.
+
+    _Yes:_
+
+    > Remove the <kbd>status: prioritization needed</kbd> label.
+
+### 3.2. Categorize the Issue
+
+Add any other applicable labels.
+
+* <kbd>type: build</kbd>: changes that affect the build system
+* <kbd>type: chore</kbd>: changes that don't modify src or test files
+* <kbd>type: ci</kbd>: changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+* <kbd>type: defect</kbd>: A report of potentially faulty or defective product behavior.
+* <kbd>type: docs</kbd>: documentation changes
+* <kbd>type: feat</kbd>: valuable new functionality. ⇧ Bumps the MINOR semver.
+* <kbd>type: perf</kbd>: change that improves performance
+* <kbd>type: refactor</kbd>: code changes that improve design, but neither fixes a bug nor adds a feature
+* <kbd>type: revert</kbd>: reverts a previous commit
+* <kbd>type: style</kbd>: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+* <kbd>type: test</kbd>: add missing tests or correct existing tests
+
 
 ## 4. Accepting Issues
 
-Issues may be labeled as "accepted" when the issue is:
+Issues may be labeled as <kbd>status: accepted</kbd> when the issue is:
 
 * A defect that you've been able to reproduce and verify (i.e. you're sure it's a defect)
-* A new rule or rule change that you're championing and [consensus](#consensus) has been reached for its inclusion in the project
+* A new feature or change that you're championing and [consensus](#consensus) has been reached for its inclusion in the project
 
-The "accepted" label will be added to other issues by a TSC member if it's appropriate for the roadmap.
+The <kbd>status: accepted</kbd> label will be added to other issues by a TSC member if it's appropriate for the roadmap.
+
+---
+
+**Note:** <kbd>good first issue</kbd>s are intended to help new contributors feel welcome and empowered to make a contribution. To ensure that new contributors are given a chance to work on these issues, issues labeled <kbd>good first issue</kbd> must be open for 30 days _from the day the issue was labeled_ before a core team member is permitted to work on them.
+
+---
 
 ## 5. Championing Issues
 
@@ -193,7 +202,7 @@ In an effort to keep the issues backlog manageable, team members may also close 
 <!-- 🔗  Body link references 🔗   -->
 
 [issue-workflow-img]: ../img/icons8/contribution-lifecycle-create-issue.png
-[label-status-triage-img]: https://fakeimg.pl/200x24/d4c5f9/FFF/?text=status:+triage&font_size=20&font=museo
+[label-status-triage-img]: https://fakeimg.pl/200x24/d4c5f9/000/?text=status:+triage&font_size=20&font=museo
 [pr-workflow-img]: ../img/icons8/contribution-lifecycle-pr.png
 
 <!-- 🔗  Octicon img references 🔗   -->

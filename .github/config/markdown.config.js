@@ -18,6 +18,7 @@ const config = {
 const basePaths = [
   './*.md',
   './docs/*.md',
+  './docs/**/*.md',
   '.github/*.md'
 ]
 

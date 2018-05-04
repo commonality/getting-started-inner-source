@@ -2,12 +2,12 @@
 
 # Managing Releases
 
-Releases are when a project formally publishes a new version so the community can use it. There are two types of releases:
+A release are when a project formally publishes a new version so the community can use it. There are two types of releases:
 
 * Regular releases that follow [semantic versioning](https://semver.org/) and are considered production-ready.
 * Prereleases that are not considered production-ready and are intended to give the community a preview of upcoming changes.
 
-## Release Team
+## 1. Release Team
 
 A two-person release team is assigned to each scheduled release. This two-person team is responsible for:
 
@@ -18,11 +18,11 @@ A two-person release team is assigned to each scheduled release. This two-person
 
 The two-person team should seek input from the whole team on the Monday following a release to double-check if a patch release is necessary.
 
-## Release Communication
+## 2. Release Communication
 
-Each scheduled release should be associated with a release issue ([example](https://github.com/eslint/eslint/issues/8138)). The release issue is the source of information for the team about the status of a release. Be sure the release issue has the "release" label so that it's easy to find.
+Each scheduled release should be associated with a release issue. The release issue is the source of information for the team about the status of a release. Be sure the release issue has the <kbd>type: release</kbd> label so that it's easy to find.
 
-## Process
+## 3. Process
 
 On the day of a scheduled release, the release team should follow these steps:
 
@@ -50,7 +50,7 @@ In rare cases, a second patch release might be necessary if the release is known
 
 After the patch release has been published (or no patch release is necessary), close the release issue and inform the team that they can start merging in semver-minor changes again.
 
-## Emergency Releases
+## 4. Emergency Releases
 
 In general, we try not to do emergency releases (an emergency release is unplanned and isn't the regularly scheduled release or the anticipated patch release). Even if there is a regression, it's best to wait the weekend to see if any other problems arise so a patch release can fix as many issues as possible.
 
