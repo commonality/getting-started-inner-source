@@ -6,7 +6,7 @@ This guide is intended for those who work as part of the {product-name} project 
 
 Describes how to deal with issues when they're opened, when interacting with users, and how to close them effectively.
 
-## 2. [Reviewing Pull Requests](pullrequests.md)
+## 2. [Reviewing Pull Requests](pull-requests.md)
 
 Describes how to review incoming pull requests.
 
