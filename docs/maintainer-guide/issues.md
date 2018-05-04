@@ -2,7 +2,7 @@
 
 # Managing Issues
 
-> Responding quickly and gratefully to issues directly affects the success of the project. Being part of the project team means helping to triage and address issues as they come in so the project can continue to run smoothly.
+> <img align="bottom" alt="issue-opened" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/issue-opened.svg"> Responding quickly and gratefully to issues directly affects the success of the project. Being part of the project team means helping to triage and address issues as they come in so the project can continue to run smoothly.
 
 ## Table of contents
 
@@ -30,7 +30,7 @@
 
 ## 1. Always build community
 
-Here are things to keep in mind:
+Issues are _contributions_, so always keep in mind:
 
 ### 1.1. Be nice
 
