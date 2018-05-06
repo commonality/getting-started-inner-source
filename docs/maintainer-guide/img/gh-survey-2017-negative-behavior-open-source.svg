@@ -1,0 +1,95 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" width="858" height="400">
+  <g transform="translate(120,48)">
+    <g class="legend" transform="translate(0, -24)">
+      <g transform="translate(0, 0)">
+        <rect fill="#FFE26C" class="bar witnessed" y="-10" width="10" height="10"></rect>
+        <text dy="0" dx="15">Witnessed</text>
+      </g>
+      <g transform="translate(89.91667175292969, 0)">
+        <rect fill="#EF7276" class="bar experienced" y="-10" width="10" height="10"></rect>
+        <text dy="0" dx="15">Experienced</text>
+      </g>
+      <g transform="translate(191.01666259765625, 0)">
+        <rect class="bar error" y="-10" width="10" height="10"></rect>
+        <text dy="0" dx="15">Error</text>
+      </g>
+    </g>
+    <defs>
+      <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4">
+        <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" style="stroke: rgb(85, 85, 85); stroke-width: 1; stroke-opacity: 0.8;"></path>
+      </pattern>
+    </defs>
+    <g class="y axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+      <path class="domain" stroke="#000" d="M-6,0.5H0.5V316.5H-6"></path>
+      <g class="tick" opacity="1" transform="translate(0,23.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Rudeness</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,113.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Name calling</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,203.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Serious incidents</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,293.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Stereotyping</text>
+      </g>
+    </g>
+    <g class="x axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+      <path class="domain" stroke="#000" d="M0.5,316V0.5H714.5V316"></path>
+      <g class="tick" opacity="1" transform="translate(0.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">0%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(143.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">10%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(286.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">20%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(428.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">30%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(571.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">40%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(714.5,0)">
+        <line stroke="#DDD" y2="316"></line>
+        <text fill="#000" y="326" dy="0.71em">50%</text>
+      </g>
+    </g>
+    <g class="group" transform="translate(0,1)">
+      <rect fill="#FFE26C" class="bar witnessed" y="1" x="0" width="643" height="21"></rect>
+      <rect fill="#EF7276" class="bar experienced" y="24" x="0" width="224" height="21"></rect>
+      <rect class="bar error" y="1" x="618" width="49" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+      <rect class="bar error" y="24" x="206" width="36" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,91)">
+      <rect fill="#FFE26C" class="bar witnessed" y="1" x="0" width="280" height="21"></rect>
+      <rect fill="#EF7276" class="bar experienced" y="24" x="0" width="65" height="21"></rect>
+      <rect class="bar error" y="1" x="261" width="39" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+      <rect class="bar error" y="24" x="55" width="21" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,181)">
+      <rect fill="#FFE26C" class="bar witnessed" y="1" x="0" width="193" height="21"></rect>
+      <rect fill="#EF7276" class="bar experienced" y="24" x="0" width="48" height="21"></rect>
+      <rect class="bar error" y="1" x="177" width="33" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+      <rect class="bar error" y="24" x="39" width="18" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,271)">
+      <rect fill="#FFE26C" class="bar witnessed" y="1" x="0" width="153" height="21"></rect>
+      <rect fill="#EF7276" class="bar experienced" y="24" x="0" width="41" height="21"></rect>
+      <rect class="bar error" y="1" x="137" width="31" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+      <rect class="bar error" y="24" x="32" width="17" height="21" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+  </g>
+</svg>

@@ -7,128 +7,208 @@
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-- [1. Always build community](#1-always-build-community)
-  * [1.1. Be nice](#11-be-nice)
-  * [1.2. Be inquisitive](#12-be-inquisitive)
-  * [1.3. Not all requests are equal](#13-not-all-requests-are-equal)
-  * [1.4. Close when appropriate](#14-close-when-appropriate)
-- [2. Types of Issues](#2-types-of-issues)
+- [1. Issues are a form of community engagement](#1-issues-are-a-form-of-community-engagement)
+  * [1.1. People value documentation](#11-people-value-documentation)
+  * [1.2. Be nice](#12-be-nice)
+  * [1.3. Ask until you understand](#13-ask-until-you-understand)
+  * [1.4. Consider requests carefully](#14-consider-requests-carefully)
+  * [1.5. Close when appropriate](#15-close-when-appropriate)
+- [2. Label Issues by type](#2-label-issues-by-type)
   * [2.1. Defect](#21-defect)
-  * [2.2. Enhancement](#22-enhancement)
-  * [2.3. Feature](#23-feature)
-  * [2.4. Question](#24-question)
-- [3. When an Issue is opened](#3-when-an-issue-is-opened)
+  * [2.2. Feature](#22-feature)
+  * [2.3. Question](#23-question)
+- [3. How to address a new open Issue](#3-how-to-address-a-new-open-issue)
   * [3.1. Prioritize the Issue](#31-prioritize-the-issue)
   * [3.2. Categorize the Issue](#32-categorize-the-issue)
 - [4. Accepting Issues](#4-accepting-issues)
 - [5. Championing Issues](#5-championing-issues)
 - [6. Consensus](#6-consensus)
-- [7. When to Send to TSC](#7-when-to-send-to-tsc)
-- [8. Evaluating Core Features and Enhancements (TSC members only)](#8-evaluating-core-features-and-enhancements-tsc-members-only)
+- [7. Requesting Technical Steering Committee (TSC) help](#7-requesting-technical-steering-committee-tsc-help)
+- [8. Evaluating core features (TSC members only)](#8-evaluating-core-features-tsc-members-only)
 - [9. When to Close an Issue](#9-when-to-close-an-issue)
+- [10. References](#10-references)
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
-## 1. Always build community
+## 1. Issues are a form of community engagement
 
-Issues are _contributions_, so always keep in mind:
+Even negative issues are _contributions_, so always keep the following points in mind.
 
-### 1.1. Be nice
+### 1.1. People value documentation
 
-Even if the people are being rude or aggressive on an issue, as a project team member you must be the mature one in the conversation. Do your best to work with everyone no matter their style. Remember, poor wording choice can also be a sign of someone who doesn't know English very well, so be sure to consider that when trying to determine the tone of someone's message. Being rude, even when someone is being rude to you, reflects poorly on the team and the project as a whole.
+> ![quote][octicon-quote] **Documentation helps create inclusive communities.** Documentation that clearly explains a project's processes, such as contributing guides and codes of conduct, is valued more by groups that are underrepresented in open source, like women. <sup>[[1]](#ref-open-source-survey "View reference.")</sup>
 
-### 1.2. Be inquisitive
+### 1.2. Be nice
 
-Ask questions on the issue whenever something isn't clear. Don't assume you understand what's being reported if there are details missing. Whenever you are unsure, it's best to ask for more information.
+Even if the people involved with an issure are rude or aggressive, as a project team member you must be the mature one in the conversation. Do your best to work with everyone no matter their style. Remember, poor wording choice can also be a sign of someone who doesn't know English very well, so be sure to consider that when trying to determine the tone of someone's message. **Being rude, even when someone is being rude to you, reflects poorly on the team and the project as a whole.**
 
-### 1.3. Not all requests are equal
+---
+
+<h4>Poor coduct and its consequences</h4>
+
+[The Open Source Survey ![link-external][octicon-link-external]](http://opensourcesurvey.org/2017/) is an open data project by GitHub and collaborators from academia, industry, and the broader open source community. Figures 1 and 2 below reflect problems with open source—and, by extension, InnerSource—projects.
+
+| Fig1. - Problems encountered in open source<br><sub>Source: <http://opensourcesurvey.org/2017/></sub> |
+| :---------------------------------------------------------------------------------: |
+|  ![GitHub Survey 2017: Problems encountered in open source][fig-survey-problems]   |
+
+<p>&nbsp;</p>
+
+> ![quote][octicon-quote] **Negative experiences have real consequences for project health.** 21% of people who experienced or witnessed a negative behavior said they stopped contributing to a project because of it, and 8% started working in private channels more often. <sup>[[2]](#ref-open-source-survey "View reference.")</sup>
+
+<p>&nbsp;</p>
+
+| Fig2. - Negative behavior in open source<br><sub>Source: <http://opensourcesurvey.org/2017/></sub> |
+| :---------------------------------------------------------------------------------: |
+|  ![GitHub Survey 2017: Negative behavior in open source][fig-survey-neg-behavior]   |
+
+---
+
+### 1.3. Ask until you understand
+
+Ask questions about the issue whenever something isn't clear. Don't assume you understand what's being reported if there are details missing. Whenever you are unsure, it's best to ask for more information.
+
+### 1.4. Consider requests carefully
 
 It's unlikely we'll be able to accommodate every request, so don't be afraid to say that something doesn't fit into the scope of the project or isn't practical. It's better to give such feedback if that's the case.
 
-### 1.4. Close when appropriate
+### 1.5. Close when appropriate
 
 Don't be afraid to close issues that you don't think will be done, or when it's become clear from the conversation that there's no further work to do. Issues can always be reopened if they are closed incorrectly, so feel free to close issues when appropriate. Just be sure to leave a comment explaining why the issue is being closed (if not closed by a commit).
 
-## 2. Types of Issues
-
-There are four primary issue categories:
-
-### 2.1. Defect
-
-Something isn't working the way it's expected to work.
-
-### 2.2. Enhancement
-
-A change to something that already exists. For instance, adding a new option to an existing rule or a defect in a rule where fixing it will result in the rule reporting more problems (in this case, use both "Defect" and "Enhancement").
-
-### 2.3. Feature
-
-Adding something that doesn't already exist. For example, adding a new rule, new formatter, or new command line flag.
-
-### 2.4. Question
-
-An inquiry about how something works that won't result in a code change. We'd prefer if people use the mailing list or chatroom for questions, but sometimes they'll open an issue.
+## 2. Label Issues by type
 
 The first goal when evaluating an issue is to determine which category the issue falls into.
 
-## 3. When an Issue is opened
+There are three primary issue categories for issues: _defects_, _features_, and _questions_.
+
+### 2.1. Defect
+
+![type: defect][type-defect]
+
+A software defect is a shortcoming, error, flaw, failure, or fault that either
+
+1. Produces an incorrect or unexpected result, or
+2. Causes unintended behavior.
+
+**![tasklist][octicon-tasklist] Don't change the status of a defect report to <kbd>status: available</kbd> until:**
+
+1. The community agrees the issue is _valid_;
+1. The defect has been confirmed by someone other than the person who reported the issue; and
+1. The issue includes step-by-step instructions for reproducing the flaw.
+
+### 2.2. Feature
+
+![type: feat][type-feat]
+
+A feature refers to public-facing functionality your consumers either use directly or supports the completion of tasks that end with _user-facing_ results.
+
+1. Adding _user-facing_ functionality that doesn't already exist; or
+
+1. A _user-facing_ enhancement to something that already exists.
+
+### 2.3. Question
+
+![type: question][type-question]
+
+An inquiry about how something works that won't result in a code change. We'd prefer if people use the mailing list or Stack Overflow for questions, but sometimes they'll open an issue.
+
+## 3. How to address a new open Issue
 
 When an issue is opened, the bot will automatically apply the label:
 
-![status: triage][label-status-triage-img]
+![status: triage pending][status-triage-pending]
 
 Issues labeled with <kbd>status: triage</kbd> are the ones that need to be looked at by team members to determine what to do next.
 
-  ---
+---
 
-  <details>
+<details>
   <summary><img align="middle" alt="question" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/question.svg"> Toggle view of the Issue workflow flowchart.</summary>
 
-  ![Issue flowchart][issue-workflow-img]
+![Issue flowchart][issue-workflow-img]
 
-  </details>
+</details>
 
-  ---
+---
 
 ### 3.1. Prioritize the Issue
 
 The steps for prioritizing an issue are:
 
-1. **Reply with a thankful comment.**
+1.  **Reply with a thankful comment.**
 
     _Why:_
 
-    > ![heart][octicon-heart] Someone _contributed their time_ to submit an issue, which means you've converted a _user_ into a _contributor!_ Either request more information (if necessary) or state your opinion about the issue.
+    > ![comment][octicon-comment] Someone _contributed their time_ to submit an issue, which means you've converted a _user_ into a _contributor!_ Either request more information (if necessary) or state your opinion about the issue.
     >
     > If it's a verified defect, ask if the user would like to submit a pull request.
 
-1. **Verify your understanding of the Issue.** Is the Issue clear and understandable?
+1.  **Verify your understanding of the Issue.** Is the Issue clear and understandable?
 
     _No:_
 
+    > ![status: revision needed][status-revision-needed]
+    >
     > Add the <kbd>status: revision needed</kbd> label to the issue. The bot will add a comment asking for more information. You don't need to comment any further until the person who opened the issue responds with the information requested from the bot.
 
     _Yes:_
 
-    > Remove the <kbd>status: prioritization needed</kbd> label.
+    > Remove the <kbd>status: triage pending</kbd> label.
 
 ### 3.2. Categorize the Issue
 
 Add any other applicable labels.
 
-* <kbd>type: build</kbd>: changes that affect the build system
-* <kbd>type: chore</kbd>: changes that don't modify src or test files
-* <kbd>type: ci</kbd>: changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
-* <kbd>type: defect</kbd>: A report of potentially faulty or defective product behavior.
-* <kbd>type: docs</kbd>: documentation changes
-* <kbd>type: feat</kbd>: valuable new functionality. ⇧ Bumps the MINOR semver.
-* <kbd>type: perf</kbd>: change that improves performance
-* <kbd>type: refactor</kbd>: code changes that improve design, but neither fixes a bug nor adds a feature
-* <kbd>type: revert</kbd>: reverts a previous commit
-* <kbd>type: style</kbd>: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-* <kbd>type: test</kbd>: add missing tests or correct existing tests
+* ![type: build][type-build] changes affect the build system.
+* ![type: chore][type-chore] changes don't modify src or test files.
+* ![type: ci][type-ci] changes the CI/CD configuration files and scripts,
 
+  > ```text
+  > # Examples with scopes
+  > ci(travis): descriptive subject
+  > ci(circle): descriptive subject
+  > ci(browser-stack): descriptive subject
+  > ci(sauce-labs): descriptive subject
+  > ```
+
+* ![type: defect][type-defect] Changes to third-party production or development support libraries.
+
+  > **SemVer ⇧**
+  >
+  > Apply the label <kbd>type: fix</kbd> to ensure that the `PATCH` version also increments.
+
+* ![type: dependency][type-dependency] Notification that a production or development library has an available update or verified vulnerability.
+* ![type: docs][type-docs] documentation changes
+* ![type: feat][type-feat] valuable new functionality.
+
+  > **SemVer ⇧**
+  >
+  > Features increment the `MINOR` version.
+
+* ![type: fix][type-fix] Defect repairs.
+
+  > **SemVer ⇧**
+  >
+  > Fixes increment the `PATCH` version.
+
+* ![type: performance][type-performance] change that improves performance
+* ![type: refactor][type-refactor] code changes that improve design, but neither fixes a bug nor adds a feature.
+* ![type: revert][type-revert] reverts to a previous commit `SHA` or `tag`.
+* ![type: style][type-style] changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+* ![type: test][type-test] add missing tests or correct existing tests
+
+    > **![info][octicon-info] Labels that affect the product version**
+    >
+    > We follow [Semantic Versioning 2.0.0 ![link-external][octicon-link-external]][semver-url].
+    >
+    > |   Version   |          ![versions][octicon-versions] MAJOR          |                    ![versions][octicon-versions] MINOR                     |             ![versions][octicon-versions] PATCH             |
+    > | :---------: | :---------------------------------------------------: | :------------------------------------------------------------------------: | :---------------------------------------------------------: |
+    > | Definition  | MAJOR version when you make incompatible API changes. | MINOR version when you add functionality in a backwards-compatible manner. | PATCH version when you make backwards-compatible bug fixes. |
+    > | Issue label |    ![type: breaking change][type-breaking-change]     |                          ![type: feat][type-feat]                          | ![type: dependency][type-dependency] ![type: fix][type-fix] |
 
 ## 4. Accepting Issues
+
+![status: accepted][status-accepted]
 
 Issues may be labeled as <kbd>status: accepted</kbd> when the issue is:
 
@@ -139,16 +219,20 @@ The <kbd>status: accepted</kbd> label will be added to other issues by a TSC mem
 
 ---
 
-**Note:** <kbd>good first issue</kbd>s are intended to help new contributors feel welcome and empowered to make a contribution. To ensure that new contributors are given a chance to work on these issues, issues labeled <kbd>good first issue</kbd> must be open for 30 days _from the day the issue was labeled_ before a core team member is permitted to work on them.
+![good first issues][good-first-issue]
+
+![community][octicon-person] <kbd>good first issues</kbd> are intended to help new contributors feel welcome and empowered to make a contribution. To ensure that new contributors are given a chance to work on these issues, issues labeled <kbd>good first issue</kbd> must be open for 30 days _from the day the issue was labeled_ before a core team member is permitted to work on them.
 
 ---
 
 ## 5. Championing Issues
 
+![status: accepted][status-accepted] ![help wanted][help-wanted]
+
 New rules and rule changes require a champion. As champion, it's your job to:
 
-* Gain [consensus](#consensus) from the {product-name} team on inclusion
-* Guide the rule creation process until it's complete (so only champion a rule that you have time to implement or help another contributor implement)
+1.  Gain [consensus](#consensus) from the `getting-started-inner-source` team on inclusion
+1.  Guide the rule creation process until it's complete (so only champion a rule that you have time to implement or help another contributor implement)
 
 Once consensus has been reached on inclusion, add the "accepted" and, optionally, "help wanted" and "good first issue" labels, as necessary.
 
@@ -156,35 +240,41 @@ Once consensus has been reached on inclusion, add the "accepted" and, optionally
 
 Consensus is reached on issues when there are at least three team members who believe the change is a good idea and no one who believes the change is a bad idea. In order to indicate your support for an issue, leave a +1 reaction (thumbs up) on the original issue description in addition to any comments you might have.
 
-## 7. When to Send to TSC
+## 7. Requesting Technical Steering Committee (TSC) help
 
 If consensus cannot be reached on an issue, or an issue's progress has been stalled and it's not clear if the issue should be closed, then you can refer the issue to the TSC for resolution. To do so, add the "tsc agenda" label to the issue and add a comment including the following information:
 
-1. A one-paragraph summary of the discussion to this point.
-2. The question you would like the TSC to answer.
+1.  A one-paragraph summary of the discussion to this point.
+2.  The question you would like the TSC to answer.
 
 The issue will be discussed at the next TSC meeting and the resolution will be posted back to the issue.
 
-## 8. Evaluating Core Features and Enhancements (TSC members only)
+## 8. Evaluating core features (TSC members only)
 
 In addition to the above, changes to the core (including CLI changes) that would result in a minor or major version release must be approved by the TSC by standard TSC motion. Add the label "tsc agenda" to the issue and it will be discussed at the next TSC meeting. In general, requests should meet the following criteria to be considered:
 
-1. The feature or feature is in scope for the project and should be added to the roadmap
-1. Someone is committed to including the change within the next year
-1. There is reasonable certainty about who will do the work
+1.  The feature or feature is in scope for the project and should be added to the roadmap
+1.  Someone is committed to including the change within the next year
+1.  There is reasonable certainty about who will do the work
 
 When a suggestion is too ambitious or would take too much time to complete, it's better not to accept the proposal. Stick to small, incremental changes and lay out a roadmap of where you'd like the project to go eventually. Don't let the project get bogged down in big features that will take a long time to complete.
 
-**Breaking Changes:** Be on the lookout for changes that would be breaking. Issues that represent breaking changes should be labeled as "breaking".
+---
 
-## 9. When to Close an Issue
+![type: breaking change][type-breaking-change]
 
-All team members are allowed to close issues depending on how the issue has been resolved.
+**Be on the lookout for changes that would break the public API. Issues that represent breaking changes should have the label <kbd>type: breaking change</kbd>.**
+
+---
+
+## 9. When to close an Issue
+
+> ![issue-closed][octicon-issue-closed] All team members are allowed to close issues depending on how the issue has been resolved.
 
 Team members may close an issue **immediately** if:
 
-1. The issue is a duplicate of an existing issue.
-1. The issue is just a question and has been answered.
+1.  The issue is a duplicate of an existing issue.
+1.  The issue is just a question and has been answered.
 
 Team members may close an issue where the consensus is to not accept the issue after a waiting period (to ensure that other team members have a chance to review the issue before it is closed):
 
@@ -193,17 +283,64 @@ Team members may close an issue where the consensus is to not accept the issue a
 
 In an effort to keep the issues backlog manageable, team members may also close an issue if the following conditions are met:
 
-* **Unaccepted**: Close after it has been open for 21 days, as these issues do not have enough support to move forward.
-* **Accepted**: Close after 90 days if no one from the team or the community is willing to step forward and own the work to complete to it.
-* **Help wanted:** Close after 90 days if it has not been completed.
+* ![status: rejected][status-rejected]
+
+    > Close after it has been open for 21 days, as these issues do not have enough support to move forward.
+
+* ![status-abandoned][status-abandoned]
+
+    > Close after 90 days if no one from the team or the community is willing to step forward and own the work to complete to it.
+
+* ![help-wanted][help-wanted]
+
+    > Close after 90 days if it has not been completed.
+
+## 10. References
+
+<a name="ref-open-source-survey"></a>
+
+**[ 1 ]** Github And Collaborators. (2018) _Open Source Survey_. Retrieved May 05, 2018, from <http://opensourcesurvey.org/2017/>
 
 <!-- ⛔️ Do not remove this comment or anything under it ⛔️ -->
+
+<!-- 🔗  label link references 🔗   -->
+
+[good-first-issue]: ../img/labels/good-first-issue.svg
+[help-wanted]: ../img/labels/help-wanted.svg
+[priority-critical]: ../img/labels/priority-critical.svg
+[priority-high]: ../img/labels/priority-high.svg
+[priority-low]: ../img/labels/priority-low.svg
+[priority-medium]: ../img/labels/priority-medium.svg
+[status-abandoned]: ../img/labels/status-abandoned.svg
+[status-accepted]: ../img/labels/status-accepted.svg
+[status-rejected]: ../img/labels/status-rejected.svg
+[status-revision-needed]: ../img/labels/status-revision-needed.svg
+[status-triage-pending]: ../img/labels/status-triage-pending.svg
+[type-breaking-change]: ../img/labels/type-breaking-change.svg
+[type-build]: ../img/labels/type-build.svg
+[type-chore]: ../img/labels/type-chore.svg
+[type-ci]: ../img/labels/type-ci.svg
+[type-defect]: ../img/labels/type-defect.svg
+[type-dependency]: ../img/labels/type-dependency.svg
+[type-docs]: ../img/labels/type-docs.svg
+[type-feat]: ../img/labels/type-feat.svg
+[type-feedback]: ../img/labels/type-feedback.svg
+[type-fix]: ../img/labels/type-fix.svg
+[type-performance]: ../img/labels/type-performance.svg
+[type-question]: ../img/labels/type-question.svg
+[type-refactor]: ../img/labels/type-refactor.svg
+[type-revert]: ../img/labels/type-revert.svg
+[type-style]: ../img/labels/type-style.svg
+[type-test]: ../img/labels/type-test.svg
 
 <!-- 🔗  Body link references 🔗   -->
 
 [issue-workflow-img]: ../img/icons8/contribution-lifecycle-create-issue.png
 [label-status-triage-img]: https://fakeimg.pl/200x24/d4c5f9/000/?text=status:+triage&font_size=20&font=museo
 [pr-workflow-img]: ../img/icons8/contribution-lifecycle-pr.png
+[semver-url]: https://semver.org/
+[fig-survey-neg-behavior]: ./img/gh-survey-2017-negative-behavior-open-source.svg
+[fig-survey-problems]: ./img/gh-survey-2017-problems-encountered-open-source.svg
 
 <!-- 🔗  Octicon img references 🔗   -->
 

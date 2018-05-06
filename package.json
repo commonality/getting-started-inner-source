@@ -27,7 +27,8 @@
   },
   "contributors": [],
   "dependencies": {
-    "adr": "1.0.7"
+    "adr": "1.0.7",
+    "npm": "6.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "1.0.1",

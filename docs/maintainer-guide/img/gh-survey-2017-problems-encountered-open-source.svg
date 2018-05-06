@@ -1,0 +1,90 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" width="858" height="250">
+  <g transform="translate(240,24)">
+    <defs>
+      <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4">
+        <path d="M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2" style="stroke: rgb(85, 85, 85); stroke-width: 1; stroke-opacity: 0.8;"></path>
+      </pattern>
+    </defs>
+    <g class="y axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+      <path class="domain" stroke="#000" d="M-6,0.5H0.5V190.5H-6"></path>
+      <g class="tick" opacity="1" transform="translate(0,10.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Incomplete or confusing documentation</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,44.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Unresponsiveness</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,78.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Dismissive responses</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,112.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Conflict</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,146.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Unexplained rejection</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(0,180.5)">
+        <line stroke="#DDD" x2="-6"></line>
+        <text fill="#000" x="-9" dy="0.32em">Unwelcoming language or content</text>
+      </g>
+    </g>
+    <g class="x axis" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle">
+      <path class="domain" stroke="#000" d="M0.5,190V0.5H594.5V190"></path>
+      <g class="tick" opacity="1" transform="translate(0.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">0%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(119.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">20%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(238.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">40%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(356.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">60%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(475.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">80%</text>
+      </g>
+      <g class="tick" opacity="1" transform="translate(594.5,0)">
+        <line stroke="#DDD" y2="190"></line>
+        <text fill="#000" y="200" dy="0.71em">100%</text>
+      </g>
+    </g>
+    <g class="group" transform="translate(0,2)">
+      <rect fill="#BFAAE6" class="bar incomplete or confusing documentation" y="1" x="0" width="550" height="15"></rect>
+      <rect class="bar error" y="1" x="544" width="11" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,36)">
+      <rect fill="#BFAAE6" class="bar unresponsiveness" y="1" x="0" width="465" height="15"></rect>
+      <rect class="bar error" y="1" x="456" width="17" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,70)">
+      <rect fill="#BFAAE6" class="bar dismissive responses" y="1" x="0" width="334" height="15"></rect>
+      <rect class="bar error" y="1" x="324" width="20" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,104)">
+      <rect fill="#BFAAE6" class="bar conflict" y="1" x="0" width="268" height="15"></rect>
+      <rect class="bar error" y="1" x="258" width="20" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,138)">
+      <rect fill="#BFAAE6" class="bar unexplained rejection" y="1" x="0" width="190" height="15"></rect>
+      <rect class="bar error" y="1" x="181" width="19" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+    <g class="group" transform="translate(0,172)">
+      <rect fill="#BFAAE6" class="bar unwelcoming language or content" y="1" x="0" width="97" height="15"></rect>
+      <rect class="bar error" y="1" x="89" width="15" height="15" style="fill: url(&quot;#hatch&quot;);"></rect>
+    </g>
+  </g>
+</svg>
