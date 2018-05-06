@@ -7,7 +7,7 @@
 ## Table of contents
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (TOC:excludeText=Table of contents) -->
-- [1. Issues are a form of community engagement](#1-issues-are-a-form-of-community-engagement)
+- [1. Issues capture engaged community dialog](#1-issues-capture-engaged-community-dialog)
   * [1.1. People value documentation](#11-people-value-documentation)
   * [1.2. Be nice](#12-be-nice)
   * [1.3. Ask until you understand](#13-ask-until-you-understand)
@@ -19,17 +19,17 @@
   * [2.3. Question](#23-question)
 - [3. How to address a new open Issue](#3-how-to-address-a-new-open-issue)
   * [3.1. Prioritize the Issue](#31-prioritize-the-issue)
-  * [3.2. Categorize the Issue](#32-categorize-the-issue)
+  * [3.2. Label by required _types of change_](#32-label-by-required-_types-of-change_)
 - [4. Accepting Issues](#4-accepting-issues)
 - [5. Championing Issues](#5-championing-issues)
 - [6. Consensus](#6-consensus)
 - [7. Requesting Technical Steering Committee (TSC) help](#7-requesting-technical-steering-committee-tsc-help)
 - [8. Evaluating core features (TSC members only)](#8-evaluating-core-features-tsc-members-only)
-- [9. When to Close an Issue](#9-when-to-close-an-issue)
+- [9. When to close an Issue](#9-when-to-close-an-issue)
 - [10. References](#10-references)
 <!-- ⛔️ AUTO-GENERATED-CONTENT:END -->
 
-## 1. Issues are a form of community engagement
+## 1. Issues capture engaged community dialog
 
 Even negative issues are _contributions_, so always keep the following points in mind.
 
@@ -155,7 +155,7 @@ The steps for prioritizing an issue are:
 
     > Remove the <kbd>status: triage pending</kbd> label.
 
-### 3.2. Categorize the Issue
+### 3.2. Label by required _types of change_
 
 Add any other applicable labels.
 

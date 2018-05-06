@@ -76,6 +76,7 @@ npm install
 | **Dependency** | **Description** | **Version** | **License** | **Type** |
 | -------------- | --------------- | ----------- | ----------- | -------- |
  | [adr@1.0.7](https://github.com/phodal/adr#readme) | 轻量级架构记录工具 - Command-line tools for working with Architecture Decision Records | 1.0.7 | MIT | production | 
+ | [npm@6.0.0](https://docs.npmjs.com/) | a package manager for JavaScript | 6.0.0 | Artistic-2.0 | production | 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 <h3>Development dependencies</h3>
