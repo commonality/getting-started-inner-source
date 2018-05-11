@@ -297,9 +297,13 @@ In an effort to keep the issues backlog manageable, team members may also close 
 
 ## 10. References
 
-<a name="ref-open-source-survey"></a>
+<a name="ref-1-open-source-survey"></a>
 
 **[ 1 ]** Github And Collaborators. (2018) _Open Source Survey_. Retrieved May 05, 2018, from <http://opensourcesurvey.org/2017/>
+
+<a name="ref-2-open-source-survey"></a>
+
+**[ 2 ]** Github And Collaborators. (2018) _Open Source Survey_. Retrieved May 05, 2018, from <http://opensourcesurvey.org/2017/>
 
 <!-- ⛔️ Do not remove this comment or anything under it ⛔️ -->
 

@@ -1,54 +1,633 @@
-# 1. Record architecture decisions
+# 2. GitLab for Web-based SCM with DevSecOps Integration
 
-![calendar][octicon-calendar] 2018-03-02
+![calendar][octicon-calendar] 2018-05-11
 
 ## Status
 
-| ADR Status    | Capability - Category  | TechRadar: Ring  |
-|:-------------:|:----------------------:|:----------------:|
-| ![ADR Status: Accepted][label-adr-accepted-img] | [Evolutionary Architecture ![External link][icon-octicon-link-external]][tw-tech-radar-evolutionary-architecture]<hr>[Architecture Decision Records ![External link][icon-octicon-link-external]][tw-tech-radar-adrs] | [![TechRadar: Techniques][label-techniques-img]][tw-tech-radar-techniques-url]<hr>![Adopt][label-tech-radar-techniques-adopt-img] |
+| ADR Status                                      | TechRadar: Ring                                                                                                |
+| :---------------------------------------------: | :------------------------------------------------------------------------------------------------------------: |
+| ![ADR Status: Proposed][label-adr-proposed-img] | [![TechRadar: Tools][label-tools-img]][tw-tech-radar-tools-url] <hr>![Adopt][label-tech-radar-tools-trial-img] |
 
 ## Context
 
-We need to record the architectural decisions made on this project, since:
+GitLab offers more features, but those features often come with graduated license plans. Ultimately, however, **GitLab's CI/CD feature is so compelling it eclipses GitHub in both cost and potential value to market.**
 
-- We want to think deeply about all our architectural decisions, exploring all alternatives and making a careful, considered, well-researched choice.
-
-- We want to be as transparent as possible in our decision-making process.
-
-- We don't want decisions to be made unilaterally in a vacuum. Specifically, we want to give our steering group the opportunity to review every major decision.
-
-- Despite being a geographically and temporally distributed team, we want our contributors to have a strong shared understanding of the technical rationale behind decisions.
-
-- We want to be able to revisit prior decisions to determine fairly if they still make sense, and if the motivating circumstances or conditions have changed.
+<table>
+<thead>
+<tr>
+<th rowspan="3">FEATURES</th>
+<th><img align="bottom" alt="mark-github" height="20" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mark-github.svg">GitHub</th>
+<th colspan="5"><img align="bottom" alt="gitlab-logo" height="20" width="20" src="../img/logo-gitlab-48.png"> GitLab</th>
+</tr>
+<tr>
+<th>Enterprise&nbsp;Edition</th>
+<th>Free</th>
+<th>Bronze</th>
+<th>Silver</th>
+<th>Gold</th>
+</tr>
+<tr>
+<th><samp>$250</samp><br><sub>user/month</sub></th>
+<th><samp>$0</samp><br><sub>user/month</sub></th>
+<th><samp>$4</samp><br><sub>user/month</sub></th>
+<th><samp>$19</samp><br><sub>user/month</sub></th>
+<th><samp><s>$99</s></samp><br><sub>user/month</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong> Built-in CI/CD </strong></p>
+<p><a href="/features/gitlab-ci-cd/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">☑️  </td>
+<td align="center">☑️ </td>
+<td align="center">☑️  </td>
+<td align="center">☑️  </td>
+</tr>
+<tr>
+<td>
+<p><strong> Cycle Analytics </strong></p>
+<p><a href="/features/cycle-analytics/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Issue Boards </strong></p>
+<p><a href="/features/issueboard/">Feature details</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Time tracking </strong></p>
+<p><a href="/features/time-tracking/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Preview your changes with Review Apps </strong></p>
+<p><a href="/features/review-apps/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Publish static websites for free with GitLab Pages </strong></p>
+<p><a href="/features/pages/">Feature details</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Git LFS 2.0 support </strong></p>
+<p><a href="https://docs.gitlab.com/ee/workflow/lfs/manage_large_binaries_with_git_lfs.html">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Configurable Issue Boards </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issue_board.html#board-with-configuration">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Issue Board Focus Mode </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issue_board.html#focus-mode">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Multiple Issue Boards </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issue_board.html#multiple-issue-boards">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Next business day support </strong></p>
+<p><a href="/support/">Feature details</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Multiple approvals in code review </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/merge_request_approvals.html">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Related issues </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issues/related_issues.html#related-issues">Documentation</a></p>
+</td>
+<td align="center"><img align="middle" alt="markdown" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/markdown.svg"> </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Issue Weights </strong></p>
+<p><a href="https://docs.gitlab.com/ee/workflow/issue_weight.html">Documentation</a></p>
+</td>
+<td align="center"> <img align="middle" alt="tag" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tag.svg"></td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Burndown Charts </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/milestones/burndown_charts.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Multiple assignees for issues </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issues/multiple_assignees_for_issues.html">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Group webhooks </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/integrations/webhooks.html">Documentation</a></p>
+</td>
+<td align="center">☑️ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Push rules </strong></p>
+<p><a href="https://docs.gitlab.com/ee/push_rules/push_rules.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+<td align="center">☑️ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Block secret file push </strong></p>
+<p><a href="https://docs.gitlab.com/ee/push_rules/push_rules.html#prevent-pushing-secrets-to-the-repository">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Squash and merge </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Remote repository mirroring </strong></p>
+<p><a href="https://docs.gitlab.com/ee/workflow/repository_mirroring.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Display merge request status for builds on Jenkins CI </strong></p>
+<p><a href="https://docs.gitlab.com/ee/integration/jenkins.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Lock project membership to group </strong></p>
+<p><a href="https://docs.gitlab.com/ee/workflow/groups.html#lock-project-membership-to-members-of-this-group">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Export issues as CSV </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/issues/csv_export.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Merge request approvals </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/merge_request_approvals.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Code Quality </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/code_quality_diff.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Restrict push and merge access to certain users </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/protected_branches.html#restricting-push-and-merge-access-to-certain-users">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Include external files in CI/CD pipeline definition </strong></p>
+<p><a href="https://docs.gitlab.com/ee/ci/yaml/#include">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Contribution Analytics </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/group/contribution_analytics/index.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Custom Additional Text in Emails </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/admin_area/settings/email.html#custom-additional-text">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Reject unsigned commits </strong></p>
+<p><a href="https://docs.gitlab.com/ee/push_rules/push_rules.html#enabling-push-rules">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Verified Committer </strong></p>
+<p><a href="https://docs.gitlab.com/ee/push_rules/push_rules.html#enabling-push-rules">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Multi-project pipeline graphs </strong></p>
+<p><a href="https://docs.gitlab.com/ee/ci/multi_project_pipeline_graphs.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Environment-specific secret variables </strong></p>
+<p><a href="https://docs.gitlab.com/ee/ci/variables/#limiting-environment-scopes-of-secret-variables">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Support for multiple Kubernetes clusters </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/clusters/#multiple-kubernetes-clusters">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Service Desk </strong></p>
+<p><a href="/features/service-desk/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> File Locking </strong></p>
+<p><a href="/features/file-locking/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Deploy Boards </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/deploy_boards.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Canary Deployments </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/deploy_boards.html#canary-deployments">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> JIRA development panel </strong></p>
+<p><a href="https://docs.gitlab.com/ee/integration/jira_development_panel.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Browser Performance Testing </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/browser_performance_testing.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> CI/CD for external repo </strong></p>
+<p><a href="https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> CI/CD for GitHub </strong></p>
+<p><a href="/features/github/">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Epics </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/group/epics/">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Roadmaps </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/group/roadmap/">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Static Application Security Testing </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/sast.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Dependency Scanning </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/dependency_scanning.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Container Scanning </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/container_scanning.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Dynamic Application Security Testing </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/merge_requests/dast.html">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> Kubernetes Cluster Monitoring </strong></p>
+<p><a href="https://docs.gitlab.com/ee/user/project/clusters/#monitoring-your-kubernetes-cluster">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> ChatOps </strong></p>
+<p><a href="https://docs.gitlab.com/ee/ci/chatops/">Documentation</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> <strong>Coming soon</strong>: Portfolio Management </strong></p>
+<p><a href="https://about.gitlab.com/direction/#portfolio-management-and-issue-management">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+<tr>
+<td>
+<p><strong> <strong>Coming soon</strong>: License management </strong></p>
+<p><a href="https://gitlab.com/gitlab-org/gitlab-ee/issues/2592">Feature details</a></p>
+</td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+<td align="center">❌ </td>
+</tr>
+</tbody>
+</table>
 
 ## Decision
 
-We will document every architecture-level decision for `getting-started-inner-source` and its core modules with an [Architecture Decision Record][nygard-article-url]. These are a well structured, relatively lightweight way to capture architectural proposals. They can serve as an artifact for discussion, and remain as an enduring record of the context and motivation of past decisions.
-
-The workflow will be:
-
-1. A community member creates an ADR document outlining an approach for a particular question or problem. The ADR has an initial status of "proposed."
-
-1. The developers and steering group discuss the ADR. During this period, the ADR should be updated to reflect additional context, concerns raised, and proposed changes.
-
-1. Once consensus is reached, ADR can be transitioned to either an "accepted" or "rejected" state.
-
-1. Only after an ADR is accepted should implementing code be committed to the master branch of the relevant project/module.
-
-1. If a decision is revisited and a different conclusion is reached, a new ADR should be created documenting the context and rationale for the change. The new ADR should reference the old one, and once the new one is accepted, the old one should (in its "status" section) be updated to point to the new one. The old ADR should not be removed or otherwise modified except for the annotation pointing to the new ADR.
+Decision here...
 
 ## Consequences
 
-1. Developers must write an ADR and submit it for review before selecting an approach to any architectural decision -- that is, any decision that affects the way `commonality` or an `commonality` application is put together at a high level.
-
-1. We will have a concrete artifact around which to focus discussion, before finalizing decisions.
-
-1. If we follow the process, decisions will be made deliberately, as a group.
-
-1. The master branch of our repositories will reflect the high-level consensus of the steering group.
-
-1. We will have a useful persistent record of why the system is the way it is.
+Consequences here...
 
 ---
 
