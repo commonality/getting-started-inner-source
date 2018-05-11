@@ -13,7 +13,7 @@
 - [5. Building Welcoming Communities](#5-building-welcoming-communities)
 - [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
 - [7. InnerSource Governance](#7-innersource-governance)
-- [8. Verizon's Code of Conduct](#8-verizons-code-of-conduct)
+- [8. Code of Conduct](#8-code-of-conduct)
 - [9. InnerSource Metrics](#9-innersource-metrics)
 - [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
 
