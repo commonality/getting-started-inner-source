@@ -36,19 +36,19 @@
 > 1. Sharing source code among IT peers; and
 > 1. Accepting contributions from those peers.
 >
-> [**➡ &nbsp;&nbsp;Learn more about InnerSource Programs; who is participating; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; who is participating; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
 
 ## 2. Starting an InnerSource product
 
 > <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
 >
-> [**➡ &nbsp;&nbsp;Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
 
 ## 3. How to Contribute to InnerSource
 
 > <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
 >
-> :soon: Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
 
 ## 4. Finding Consumers for your InnerSource Product
 
@@ -66,19 +66,19 @@
 
 > <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
 >
-> :soon:  Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
 
 ## 7. InnerSource Governance
 
 > <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
 >
-> [**➡ &nbsp;&nbsp;A governance model gives you _social framework_ for collaboration and consensus. The InnerSource Community and its members**][program-structure-url].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
 
-## 8. Verizon's Code of Conduct
+## 8. Code of Conduct
 
-> Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.
+> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
 >
-> [![Download Our Code of Conduct][pdf] Download **_Our Code of Conduct_**][vz-c-o-c-pdf].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](.github/CODE_OF_CONDUCT.md)**
 
 ## 9. InnerSource Metrics
 
