@@ -78,7 +78,7 @@
 
 > <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](.github/CODE_OF_CONDUCT.md)**
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
 
 ## 9. InnerSource Metrics
 
