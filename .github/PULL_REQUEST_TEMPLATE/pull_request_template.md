@@ -50,8 +50,6 @@ $ npm test
 >
 > ![alert][octicon-alert] **_All_ tasks _must_ be completed** and **verified** before a PR may be merged into <samp>master</samp>, however.
 
----
-
 [coveralls-img]: https://coveralls.io/repos/github/commonality/getting-started-inner-source/badge.svg
 [coveralls-url]: https://coveralls.io/github/commonality/getting-started-inner-source
 [sonar-code-smells-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=code_smells

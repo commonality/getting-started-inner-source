@@ -2,6 +2,8 @@
 
 ## Our Pledge
 
+![pledge][pledge-img]
+
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
 our community a harassment-free experience for everyone, regardless of age, body
@@ -68,7 +70,10 @@ members of the project's leadership.
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+available at <https://www.contributor-covenant.org/version/1/4/code-of-conduct.html>.
+
+<!-- ⛔️ Do not remove this comment or anything below it ⛔️ -->
 
 [email]: greg@swindle.net
 [homepage]: https://www.contributor-covenant.org
+[pledge-img]: /docs/img/icons8/icon-pledge-50.png
