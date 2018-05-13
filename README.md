@@ -36,7 +36,7 @@
 > 1. Sharing source code among IT peers; and
 > 1. Accepting contributions from those peers.
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; who is participating; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
 
 ## 2. Starting an InnerSource product
 
