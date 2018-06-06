@@ -1,6 +1,6 @@
 # Getting Started with InnerSource
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+> Disolve silos and work as a unified organization to deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from your engineering and design communities.
 
 ## Table of contents
 
@@ -25,30 +25,30 @@
 
 > <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
 >
-> **InnerSource is a working model that:**
+> **InnerSource is a _working model_ that:**
 >
 > 1. Gives your team access to the most talented engineers and designers in your organization
 > 1. Grants designers and engineers the freedom to work on products they’re passionate about.
 >
-> **InnerSource compliments Agile product delivery through:**
+> **InnerSource _compliments_ Agile product delivery through:**
 >
 > 1. Transparent delivery processes and open communication;
 > 1. Sharing source code among IT peers; and
 > 1. Accepting contributions from those peers.
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."][1]**
 
 ## 2. Starting an InnerSource product
 
 > <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community][2]**.
 
 ## 3. How to Contribute to InnerSource
 
 > <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.][3]**
 
 ## 4. Finding Consumers for your InnerSource Product
 
@@ -66,56 +66,42 @@
 
 > <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.][6]**
 
 ## 7. InnerSource Governance
 
 > <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ of rules, roles, and responsibilities for efficient collaboration and informed consensus.][7]**
 
 ## 8. Code of Conduct
 
 > <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
+> <img align="bottom" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct][8].**
 
-## 9. InnerSource Metrics
+## 9. InnerSource Analytics
 
 > <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
 >
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Measure and track your InnerSource strategy, code, communities, and culture in order to make informed decisions that drive success][9]**.
 
 ## 10. InnerSource as a pathway to Open Source
 
 > <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
 >
-> :soon: How to start the process of making your InnerSource product open to the world.
+> :soon: Use InnerSource to incubate Open Source products that open new market and revenue potential.
 
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
+[1]: /docs/what-is-inner-source.md
+[2]: /docs/inner-source-checklist.md
+[3]: /docs/developer-guide/#readme
+[4]: /docs/consumers/#readme
+[5]: /docs/communities/#readme
+[6]: /docs/maintainer-guide/#readme
+[7]: /docs/maintainer-guide/governance.md
+[8]: /docs/code-of-conduct/#readme
+[9]: /docs/analytics/#readme
+[10]: /docs/inner-source-to-open-source/#readme
 
 <!-- ⛔️ Octicon img references ⛔️  -->
 

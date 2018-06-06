@@ -1,121 +1,107 @@
-# Getting Started with InnerSource
+# Pull request (PR)
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+_Please describe your changes here._
 
-## Table of contents
+## Associated issue(s)
 
-<!-- toc -->
+Closes #ISSUE_NUMBER
 
-- [1. What is InnerSource, and how does it benefit you?](#1-what-is-innersource-and-how-does-it-benefit-you)
-- [2. Starting an InnerSource product](#2-starting-an-innersource-product)
-- [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
-- [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
-- [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
-- [7. InnerSource Governance](#7-innersource-governance)
-- [8. Code of Conduct](#8-code-of-conduct)
-- [9. InnerSource Metrics](#9-innersource-metrics)
-- [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
+---
 
-<!-- tocstop -->
+* [ ] 1.  The **acceptance criteria** for all associated issues have been completed, tested, and validated.
+* [ ] 2.  The **README** either reflects my changes or does not require updates.
+* [ ] 3.  The **CONTRIBUTING** document either reflects my changes or does not require updates.
 
-<!-- tocend -->
+---
 
-## 1. What is InnerSource, and how does it benefit you?
+<!-- ⛔️ Please! DO NOT delete anything below this line. ⛔️  -->
 
-> <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
+## Souce code analysis
+
+### Code quality summary
+
+| Measure             | Scores                                                                                                                                                                                                                                                                                                                                                                                                   |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Quality gate**    | [![Overall Quality][sonar-gate-img]][sonar-gate-url]                                                                                                                                                                                                                                                                                                                                                     |
+| **Complexity**      | [![Complexity][sonar-complexity-img]][sonar-complexity-url]<br>[![Cognitive complexity][sonar-cognitive-img]][sonar-cognitive-url]<br>[![Complexity per Class][sonar-complexity-class-img]][sonar-complexity-class-img]<br>[![Complexity per file][sonar-complexity-file-img]][sonar-complexity-file-img] <br>[![Complexity per Function][sonar-complexity-function-img]][sonar-complexity-function-url] |
+| **Duplications**    | [![Duplications][sonar-duplications-img]][sonar-duplications-url]                                                                                                                                                                                                                                                                                                                                        |
+| **Issues**          | [![Issues][sonar-issues-img]][sonar-issues-url]                                                                                                                                                                                                                                                                                                                                                          |
+| **Maintainability** | [![Code smells][sonar-code-smells-img]][sonar-code-smells-url]<br>[![Maintainability][sonar-maintainability-img]][sonar-maintainability-url]<br>[![Technical debt][sonar-tech-debt-img]][sonar-tech-debt-url]                                                                                                                                                                                            |
+| **Reliability**     | [![Reliability][sonar-reliability-img]][sonar-reliability-url]                                                                                                                                                                                                                                                                                                                                           |
+| **Security**        | [![Security][sonar-security-img]][sonar-security-url]<br>[![Vulnerabilities][sonar-vulnerabilities-img]][sonar-vulnerabilities-url]                                                                                                                                                                                                                                                                      |
+| **Test coverage**   | [![Coverage Status][sonar-coverage-img]][sonar-coverage-url]<br>[![Coveralls coverage][coveralls-img]][coveralls-url]                                                                                                                                                                                                                                                                                    |
+
+### Code quality, vulnerability, and standards compliance tools
+
+|                                    Code Style                                    |                                 Linters                                 |                           Test frameworks                           |
+| :------------------------------------------------------------------------------: | :---------------------------------------------------------------------: | :-----------------------------------------------------------------: |
+|           [![JavaScript Style Guide][standardjs-logo]][standardjs-url]           |                  [![ESLint][eslint-logo]][eslint-url]                   |                 [![Jest BDD][jest-logo]][jest-url]                  |
+| [Standard JS user guide ![link-external][octicon-link-external]][standardjs-url] | [ESlint user guide ![link-external][octicon-link-external]][eslint-url] | [Jest user guide ![link-external][octicon-link-external]][jest-url] |
+
+### How to format, lint, and test your changes
+
+Open a Terminal, go to the root directory for `getting-started-inner-source`, and run:
+
+```bash
+$ npm test
+```
+
+> ![info][octicon-info] Completed tasks are _not_ required to open a PR, and may be addressed while the PR is open.
 >
-> **InnerSource is a working model that:**
->
-> 1. Gives your team access to the most talented engineers and designers in your organization
-> 1. Grants designers and engineers the freedom to work on products they’re passionate about.
->
-> **InnerSource compliments Agile product delivery through:**
->
-> 1. Transparent delivery processes and open communication;
-> 1. Sharing source code among IT peers; and
-> 1. Accepting contributions from those peers.
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+> ![alert][octicon-alert] **_All_ tasks _must_ be completed** and **verified** before a PR may be merged into <samp>master</samp>, however.
 
-## 2. Starting an InnerSource product
+[coveralls-img]: https://coveralls.io/repos/github/commonality/getting-started-inner-source/badge.svg
+[coveralls-url]: https://coveralls.io/github/commonality/getting-started-inner-source
+[sonar-code-smells-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=code_smells
+[sonar-code-smells-url]: https://sonarcloud.io/component_measures/metric/code_smells/list?id=getting-started-inner-source&metric=code_smells
+[sonar-cognitive-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=cognitive_complexity
+[sonar-cognitive-url]: https://sonarcloud.io/component_measures/metric/cognitive_complexity/list?id=getting-started-inner-source&metric=cognitive_complexity
+[sonar-complexity-class-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=class_complexity
+[sonar-complexity-class-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=class_complexity
+[sonar-complexity-file-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=file_complexity
+[sonar-complexity-file-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=file_complexity
+[sonar-complexity-function-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=function_complexity
+[sonar-complexity-function-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=function_complexity
+[sonar-complexity-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=complexity
+[sonar-complexity-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=complexity
+[sonar-coverage-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=coverage
+[sonar-coverage-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=coverage
+[sonar-duplications-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=duplicated_lines_density
+[sonar-duplications-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=duplicated_lines_density
+[sonar-gate-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=alert_status
+[sonar-gate-url]: https://sonarcloud.io/dashboard?id=getting-started-inner-source
+[sonar-issues-img]: https://sonarcloud.io/api/badges/measure?key=getting-started-inner-source&metric=blocker_violations
+[sonar-issues-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=violations
+[sonar-maintainability-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=sqale_rating
+[sonar-maintainability-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=new_maintainability_rating
+[sonar-ncloc-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=ncloc
+[sonar-ncloc-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=ncloc
+[sonar-reliability-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=reliability_rating
+[sonar-reliability-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=Reliability
+[sonar-security-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=security_rating
+[sonar-security-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=vulnerabilities
+[sonar-tech-debt-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=sqale_index
+[sonar-tech-debt-url]: https://sonarcloud.io/component_measures/metric/sqale_index/list?id=getting-started-inner-source&metric=sqale_index
+[sonar-vulnerabilities-img]: https://sonarcloud.io/api/project_badges/measure?project=getting-started-inner-source&metric=vulnerabilities
+[sonar-vulnerabilities-url]: https://sonarcloud.io/component_measures?id=getting-started-inner-source&metric=vulnerabilities
 
-> <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+<!-- ⛔️ Badge references ⛔️  -->
 
-## 3. How to Contribute to InnerSource
+[standardjs-img]: https://img.shields.io/badge/code_style-standard-F1DA40.svg?style=flat-sqaure
+[standardjs-url]: https://standardjs.com
 
-> <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
+<!-- ⛔️ Help link references ⛔️  -->
 
-## 4. Finding Consumers for your InnerSource Product
+[ghh-closing-issues-keywords-url]: https://help.github.com/articles/closing-issues-using-keywords/
 
-> <img align="bottom" alt="telescope" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg">
->
-> :soon: Get your product into the happy hands of users and grow your product.
+<!-- ⛔️ Logo img references ⛔️  -->
 
-## 5. Building Welcoming Communities
-
-> <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
->
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
-
-## 6. Best Practices for Maintainers
-
-> <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
-
-## 7. InnerSource Governance
-
-> <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
-
-## 8. Code of Conduct
-
-> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
-
-## 9. InnerSource Metrics
-
-> <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
->
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
-
-## 10. InnerSource as a pathway to Open Source
-
-> <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
->
-> :soon: How to start the process of making your InnerSource product open to the world.
-
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
+[standardjs-logo]: https://cdn.rawgit.com/feross/standard/master/badge.svg
+[standardjs-url]: https://github.com/feross/standard
+[eslint-logo]: https://raw.githubusercontent.com/commonality/getting-started-inner-source/master/.github/assets/img/logo-eslint.png
+[eslint-url]: https://eslint.org/docs/user-guide/getting-started
+[jest-logo]: https://raw.githubusercontent.com/commonality/getting-started-inner-source/master/.github/assets/img/logo-jest.png
+[jest-url]: https://facebook.github.io/jest/docs/en/getting-started.html
 
 <!-- ⛔️ Octicon img references ⛔️  -->
 

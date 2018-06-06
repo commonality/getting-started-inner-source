@@ -1,121 +1,120 @@
-# Getting Started with InnerSource
+# 1. Record architecture decisions
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+![calendar][octicon-calendar] 2018-03-02
 
-## Table of contents
+## Status
 
-<!-- toc -->
+| ADR Status    | Capability - Category  | TechRadar: Ring  |
+|:-------------:|:----------------------:|:----------------:|
+| ![ADR Status: Accepted][label-adr-accepted-img] | [Evolutionary Architecture ![External link][icon-octicon-link-external]][tw-tech-radar-evolutionary-architecture]<hr>[Architecture Decision Records ![External link][icon-octicon-link-external]][tw-tech-radar-adrs] | [![TechRadar: Techniques][label-techniques-img]][tw-tech-radar-techniques-url]<hr>![Adopt][label-tech-radar-techniques-adopt-img] |
 
-- [1. What is InnerSource, and how does it benefit you?](#1-what-is-innersource-and-how-does-it-benefit-you)
-- [2. Starting an InnerSource product](#2-starting-an-innersource-product)
-- [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
-- [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
-- [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
-- [7. InnerSource Governance](#7-innersource-governance)
-- [8. Code of Conduct](#8-code-of-conduct)
-- [9. InnerSource Metrics](#9-innersource-metrics)
-- [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
+## Context
 
-<!-- tocstop -->
+We need to record the architectural decisions made on this project, since:
 
-<!-- tocend -->
+- We want to think deeply about all our architectural decisions, exploring all alternatives and making a careful, considered, well-researched choice.
 
-## 1. What is InnerSource, and how does it benefit you?
+- We want to be as transparent as possible in our decision-making process.
 
-> <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
->
-> **InnerSource is a working model that:**
->
-> 1. Gives your team access to the most talented engineers and designers in your organization
-> 1. Grants designers and engineers the freedom to work on products they’re passionate about.
->
-> **InnerSource compliments Agile product delivery through:**
->
-> 1. Transparent delivery processes and open communication;
-> 1. Sharing source code among IT peers; and
-> 1. Accepting contributions from those peers.
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+- We don't want decisions to be made unilaterally in a vacuum. Specifically, we want to give our steering group the opportunity to review every major decision.
 
-## 2. Starting an InnerSource product
+- Despite being a geographically and temporally distributed team, we want our contributors to have a strong shared understanding of the technical rationale behind decisions.
 
-> <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+- We want to be able to revisit prior decisions to determine fairly if they still make sense, and if the motivating circumstances or conditions have changed.
 
-## 3. How to Contribute to InnerSource
+## Decision
 
-> <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
+We will document every architecture-level decision for `getting-started-inner-source` and its core modules with an [Architecture Decision Record][nygard-article-url]. These are a well structured, relatively lightweight way to capture architectural proposals. They can serve as an artifact for discussion, and remain as an enduring record of the context and motivation of past decisions.
 
-## 4. Finding Consumers for your InnerSource Product
+The workflow will be:
 
-> <img align="bottom" alt="telescope" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg">
->
-> :soon: Get your product into the happy hands of users and grow your product.
+1. A community member creates an ADR document outlining an approach for a particular question or problem. The ADR has an initial status of "proposed."
 
-## 5. Building Welcoming Communities
+1. The developers and steering group discuss the ADR. During this period, the ADR should be updated to reflect additional context, concerns raised, and proposed changes.
 
-> <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
->
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
+1. Once consensus is reached, ADR can be transitioned to either an "accepted" or "rejected" state.
 
-## 6. Best Practices for Maintainers
+1. Only after an ADR is accepted should implementing code be committed to the master branch of the relevant project/module.
 
-> <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
+1. If a decision is revisited and a different conclusion is reached, a new ADR should be created documenting the context and rationale for the change. The new ADR should reference the old one, and once the new one is accepted, the old one should (in its "status" section) be updated to point to the new one. The old ADR should not be removed or otherwise modified except for the annotation pointing to the new ADR.
 
-## 7. InnerSource Governance
+## Consequences
 
-> <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
+1. Developers must write an ADR and submit it for review before selecting an approach to any architectural decision -- that is, any decision that affects the way `commonality` or an `commonality` application is put together at a high level.
 
-## 8. Code of Conduct
+1. We will have a concrete artifact around which to focus discussion, before finalizing decisions.
 
-> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
+1. If we follow the process, decisions will be made deliberately, as a group.
 
-## 9. InnerSource Metrics
+1. The master branch of our repositories will reflect the high-level consensus of the steering group.
 
-> <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
->
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
+1. We will have a useful persistent record of why the system is the way it is.
 
-## 10. InnerSource as a pathway to Open Source
+---
 
-> <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
->
-> :soon: How to start the process of making your InnerSource product open to the world.
+<a href="./#readme"><img align="bottom" alt="home" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/home.svg"> Index of ADRs</a>
 
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
+<!-- ADR Status Images -->
+
+[label-adr-proposed-img]: https://fakeimg.pl/160x40/0052cc/FFF/?text=Proposed&font_size=26
+[label-adr-accepted-img]: https://fakeimg.pl/160x40/0e8a16/FFF/?text=Accepted&font_size=26
+[label-adr-rejected-img]: https://fakeimg.pl/160x40/666/FFF/?text=Rejected&font_size=26
+[label-adr-deprecated-img]: https://fakeimg.pl/160x40/b60205/FFF/?text=Deprecated&font_size=26
+[label-adr-superseded-img]: https://fakeimg.pl/160x40/e99695/000/?text=Superseded&font_size=26
+
+<!-- Icons -->
+
+[fake-images-pl-github-url]: https://github.com/Rydgel/Fake-images-please "View the source code on GitHub."
+[icon-checklist]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg
+[icon-clippy]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/clippy.svg
+[icon-octicon-link-external]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/link-external.svg
+[icon-mark-github]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/mark-github.svg
+[icon-md]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/markdown.svg
+[icon-media]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/file-media.svg
+
+<!-- TechRadar Quadrants -->
+
+<!-- QUADRANT: Languages and Frameworks -->
+[label-langs-frameworks-img]: https://fakeimg.pl/200x40/b32059/FFF/?text=Languages+%26+Frameworks&font_size=24
+[label-tech-radar-langs-frameworks-img]: https://fakeimg.pl/200x80/b32059/FFF/?text=TechRadar:%0ALanguages+%26+Frameworks&font_size=24
+<!-- RINGS: Languages and Frameworks -->
+[label-tech-radar-langs-frameworks-adopt-img]: https://fakeimg.pl/80x40/b32059/FFF/?text=Adopt&font_size=18
+[label-tech-radar-langs-frameworks-trial-img]: https://fakeimg.pl/80x40/b32059/FFF/?text=Trial&font_size=18
+[label-tech-radar-langs-frameworks-assess-img]: https://fakeimg.pl/80x40/b32059/FFF/?text=Assess&font_size=18
+[label-tech-radar-langs-frameworks-hold-img]: https://fakeimg.pl/80x40/b32059/FFF/?text=Hold&font_size=18
+<!-- QUADRANT: Platforms -->
+[label-platforms-img]: https://fakeimg.pl/200x40/f38a3e/FFF/?text=Platforms&font_size=24
+[label-tech-radar-platforms-img]: https://fakeimg.pl/200x80/f38a3e/FFF/?text=TechRadar:+Platforms&font_size=24
+<!-- RINGS: Platforms -->
+[label-tech-radar-platforms-adopt-img]: https://fakeimg.pl/80x40/f38a3e/FFF/?text=Adopt&font_size=18
+[label-tech-radar-platforms-trial-img]: https://fakeimg.pl/80x40/f38a3e/FFF/?text=Trial&font_size=18
+[label-tech-radar-platforms-assess-img]: https://fakeimg.pl/80x40/f38a3e/FFF/?text=Assess&font_size=18
+[label-tech-radar-platforms-hold-img]: https://fakeimg.pl/80x40/f38a3e/FFF/?text=Hold&font_size=18
+<!-- QUADRANT: Techniques -->
+[label-techniques-img]: https://fakeimg.pl/200x40/1ebccd/FFF/?text=Techniques&font_size=24
+[label-tech-radar-techniques-img]: https://fakeimg.pl/200x80/1ebccd/FFF/?text=TechRadar:+Techniques&font_size=24
+<!-- RINGS: Techniques -->
+[label-tech-radar-techniques-adopt-img]: https://fakeimg.pl/80x40/1ebccd/FFF/?text=Adopt&font_size=18
+[label-tech-radar-techniques-trial-img]: https://fakeimg.pl/80x40/1ebccd/FFF/?text=Trial&font_size=18
+[label-tech-radar-techniques-assess-img]: https://fakeimg.pl/80x40/1ebccd/FFF/?text=Assess&font_size=18
+[label-tech-radar-techniques-hold-img]: https://fakeimg.pl/80x40/1ebccd/FFF/?text=Hold&font_size=18
+<!-- QUADRANT: Tools -->
+[label-tools-img]: https://fakeimg.pl/200x40/86b782/FFF/?text=Tools&font_size=24
+[label-tech-radar-tools-img]: https://fakeimg.pl/200x80/86b782/FFF/?text=TechRadar:+Tools&font_size=24
+<!-- RINGS: Tools -->
+[label-tech-radar-tools-adopt-img]: https://fakeimg.pl/80x40/86b782/FFF/?text=Adopt&font_size=18
+[label-tech-radar-tools-trial-img]: https://fakeimg.pl/80x40/86b782/FFF/?text=Trial&font_size=18
+[label-tech-radar-tools-assess-img]: https://fakeimg.pl/80x40/86b782/FFF/?text=Assess&font_size=18
+[label-tech-radar-tools-hold-img]: https://fakeimg.pl/80x40/86b782/FFF/?text=Hold&font_size=18
+
+<!-- Web pages: external -->
+
+[tw-tech-radar-evolutionary-architecture]: https://www.thoughtworks.com/radar/techniques/evolutionary-architecture
+[tw-tech-radar-adrs]: https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records
+[tw-tech-radar-faq-url]: https://www.thoughtworks.com/radar/a-z
+[tw-tech-radar-techniques-url]: https://www.thoughtworks.com/radar/techniques
+[tw-tech-radar-tools-url]: https://www.thoughtworks.com/radar/tools
+[nygard-article-url]: http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
 
 <!-- ⛔️ Octicon img references ⛔️  -->
 

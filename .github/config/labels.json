@@ -1,0 +1,118 @@
+[
+  {
+    "name": "priority: low",
+    "color": "#c2e0c6"
+  },
+  {
+    "name": "priority: medium",
+    "color": "#fbca04"
+  },
+  {
+    "name": "priority: high",
+    "color": "#eb6420"
+  },
+  {
+    "name": "priority: critical",
+    "color": "#e11d21"
+  },
+  {
+    "name": "status: abandoned",
+    "color": "#000000"
+  },
+  {
+    "name": "status: accepted",
+    "color": "#009800"
+  },
+  {
+    "name": "status: available",
+    "color": "#bfe5bf"
+  },
+  {
+    "name": "status: blocked",
+    "color": "#e11d21"
+  },
+  {
+    "name": "status: on hold",
+    "color": "#e11d21"
+  },
+  {
+    "name": "status: pending",
+    "color": "#fef2c0"
+  },
+  {
+    "name": "status: rejected",
+    "color": "#000000"
+  },
+  {
+    "name": "status: review needed",
+    "color": "#fbca04"
+  },
+  {
+    "name": "status: revision needed",
+    "color": "#e11d21"
+  },
+  {
+    "name": "type: breaking change",
+    "color": "#b60205"
+  },
+  {
+    "name": "type: build",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: chore",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: ci",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: defect",
+    "color": "#e99695"
+  },
+  {
+    "name": "type: docs",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: feature",
+    "color": "#5319e7"
+  },
+  {
+    "name": "type: feedback",
+    "color": "#fbca04"
+  },
+  {
+    "name": "type: fix",
+    "color": "#5319e7"
+  },
+  {
+    "name": "type: performance",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: question",
+    "color": "#fbca04"
+  },
+  {
+    "name": "type: refactor",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: revert",
+    "color": "#5319e7"
+  },
+  {
+    "name": "type: spike",
+    "color": "#c5def5"
+  },
+  {
+    "name": "type: style",
+    "color": "#bfd4f2"
+  },
+  {
+    "name": "type: test",
+    "color": "#bfd4f2"
+  }
+]
