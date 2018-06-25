@@ -1,0 +1,11 @@
+{
+  "generator-community": {
+    "promptValues": {
+      "authorName": "commonality",
+      "authorEmail": "greg@swindle.net",
+      "authorUrl": "https://github.com/commonality",
+      "lang": "Node.js",
+      "dependencyManager": "npm"
+    }
+  }
+}

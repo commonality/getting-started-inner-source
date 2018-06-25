@@ -1,0 +1,139 @@
+{
+  "$id": "http://github.com/commonality/schemas/structured-readme-schema.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "title": {
+      "$id": "/properties/title",
+      "type": "string",
+      "title": "The Title Schema ",
+      "default": "",
+      "examples": ["product-title"]
+    },
+    "banner": {
+      "$id": "/properties/banner",
+      "type": "string",
+      "title": "The Banner Schema ",
+      "default": "",
+      "examples": ["link"]
+    },
+    "badges": {
+      "$id": "/properties/badges",
+      "type": "array",
+      "items": {
+        "$id": "/properties/badges/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "default": "",
+        "examples": ["link1", "link2"]
+      }
+    },
+    "description": {
+      "$id": "/properties/description",
+      "type": "string",
+      "title": "The Description Schema ",
+      "default": "",
+      "examples": ["short-description"]
+    },
+    "toc": {
+      "$id": "/properties/toc",
+      "type": "string",
+      "title": "The Toc Schema ",
+      "default": "",
+      "examples": ["table-of-contents"]
+    },
+    "tocList": {
+      "$id": "/properties/tocList",
+      "type": "array",
+      "items": {
+        "$id": "/properties/tocList/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "default": "",
+        "examples": ["link1", "link2"]
+      }
+    },
+    "background": {
+      "$id": "/properties/background",
+      "type": "string",
+      "title": "The Background Schema ",
+      "default": "",
+      "examples": ["description"]
+    },
+    "installation": {
+      "$id": "/properties/installation",
+      "type": "string",
+      "title": "The Installation Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "prerequisites": {
+      "$id": "/properties/prerequisites",
+      "type": "string",
+      "title": "The Prerequisites Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "installationCodeSample": {
+      "$id": "/properties/installationCodeSample",
+      "type": "string",
+      "title": "The Installationcodesample Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "configuration": {
+      "$id": "/properties/configuration",
+      "type": "string",
+      "title": "The Configuration Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "usage": {
+      "$id": "/properties/usage",
+      "type": "string",
+      "title": "The Usage Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "api": {
+      "$id": "/properties/api",
+      "type": "string",
+      "title": "The Api Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "security": {
+      "$id": "/properties/security",
+      "type": "string",
+      "title": "The Security Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "maintainers": {
+      "$id": "/properties/maintainers",
+      "type": "array",
+      "items": {
+        "$id": "/properties/maintainers/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "default": "",
+        "examples": ["link1", "link2"]
+      }
+    },
+    "contributing": {
+      "$id": "/properties/contributing",
+      "type": "string",
+      "title": "The Contributing Schema ",
+      "default": "",
+      "examples": [""]
+    },
+    "license": {
+      "$id": "/properties/license",
+      "type": "string",
+      "title": "The License Schema ",
+      "default": "",
+      "examples": [""]
+    }
+  }
+}

@@ -1,129 +1,228 @@
-# Getting Started with InnerSource
+# Developer Guide
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+> <img align="bottom" alt="code" height="50" width="50" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/code.svg"> This guide is for those who want to contribute code to `getting-started-inner-source`. This guide describes how to set up your development environment so that you can build and test `getting-started-inner-source`.
 
-## Table of contents
+## 1. Recommended skills
 
-<!-- toc -->
+In order to work with `getting-started-inner-source` as a developer, we recommend you:
 
-- [1. What is InnerSource, and how does it benefit you?](#1-what-is-innersource-and-how-does-it-benefit-you)
-- [2. Starting an InnerSource product](#2-starting-an-innersource-product)
-- [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
-- [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
-- [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
-- [7. InnerSource Governance](#7-innersource-governance)
-- [8. Code of Conduct](#8-code-of-conduct)
-- [9. InnerSource Metrics](#9-innersource-metrics)
-- [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
+* **Know JavaScript**, since `getting-started-inner-source` is written in JavaScript.
+* Are **familiar with Node.js**, since `getting-started-inner-source` runs on it.
+* Feel **comfortable with command-line** programs.
+* Understand **unit tests** and why they're important.
 
-<!-- tocstop -->
+If that sounds like you, then continue reading to get started.
 
-<!-- tocend -->
+## 2. Development software
 
-## 1. What is InnerSource, and how does it benefit you?
+Before you can build and test `getting-started-inner-source`, you must install and configure the following products on your development machine:
 
-> <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
->
-> **InnerSource is a working model that:**
->
-> 1. Gives your team access to the most talented engineers and designers in your organization
-> 1. Grants designers and engineers the freedom to work on products they’re passionate about.
->
-> **InnerSource compliments Agile product delivery through:**
->
-> 1. Transparent delivery processes and open communication;
-> 1. Sharing source code among IT peers; and
-> 1. Accepting contributions from those peers.
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+1.  [Git](http://git-scm.com) and/or the **GitHub app** (for [MacOS](http://mac.github.com) or [Windows](http://windows.github.com))
 
-## 2. Starting an InnerSource product
+    _Why:_
 
-> <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+    > `getting-started-inner-source` is hosted on GitHub and uses Git for source control. In order to obtain the source code, you must first install Git on your system. Instructions for installing and setting up Git can be found at <https://help.github.com/articles/set-up-git>.
 
-## 3. How to Contribute to InnerSource
+1.  [Node.js](http://nodejs.org), (version specified in the engines field of [`package.json`](../package.json)) 
 
-> <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
+    _Why:_
 
-## 4. Finding Consumers for your InnerSource Product
+    > `getting-started-inner-source` uses Node.js modules to generate tables of contents, version, and publish documentation.
 
-> <img align="bottom" alt="telescope" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg">
->
-> :soon: Get your product into the happy hands of users and grow your product.
+1.  **NPM** (which installs with Node.js) or [Yarn](https://yarnpkg.com)
 
-## 5. Building Welcoming Communities
+    _Why:_
 
-> <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
->
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
+    > NPM and Yarn install and update `getting-started-inner-source's` third-party dependencies.
 
-## 6. Best Practices for Maintainers
+## 3. Getting the source code
 
-> <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
+Fork and clone the `getting-started-inner-source` repository:
 
-## 7. InnerSource Governance
+1.  [**Sign in**](https://github.com/login) to your GitHub account or [sign up for a (free) GitHub account](https://github.com/join).
+2.  [**Fork**](http://help.github.com/forking) the [main `getting-started-inner-source` repository](https://github.com/commonality/`getting-started-inner-source`) (aka, "`origin`").
+3.  **Clone your fork** of the `getting-started-inner-source` repository and define an `upstream` remote pointing back to the `getting-started-inner-source` repository that you forked in the first place.
 
-> <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
+    > ```shell
+    > # Clone your GitHub repository:
+    > git clone git@github.com:<owner>/getting-started-inner-source.git
+    >
+    > # Go to the repository's root directory:
+    > cd getting-started-inner-source
+    >
+    > # Add the main GitHub repository as an upstream remote
+    > # to your repository:
+    > git remote add upstream https://github.com/owner/repo.git
+    > ```
 
-## 8. Code of Conduct
+## 4. Installing dependencies
 
-> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
+Next, install the JavaScript modules needed to build and test `getting-started-inner-source`:
 
-## 9. InnerSource Metrics
-
-> <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
->
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
-
-## 10. InnerSource as a pathway to Open Source
-
-> <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
->
-> :soon: How to start the process of making your InnerSource product open to the world.
+```shell
+# Install all project dependencies (package.json)
+npm install
+```
 
 ---
 
-<!-- ⛔️ Do not remove this comment or anything below it ⛔️  -->
+<details><summary><strong>View all <code>getting-started-inner-source</code> dependencies.</strong></summary>
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source?ref=badge_large)
+<h3>Production dependencies</h3>
 
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
+`getting-started-inner-source` requires the following dependencies to operate.
 
-<!-- ⛔️ Octicon img references ⛔️  -->
+<!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:production=true) -->
+| **Dependency** | **Description** | **Version** | **License** | **Type** |
+| -------------- | --------------- | ----------- | ----------- | -------- |
+ | [adr@1.0.7](https://github.com/phodal/adr#readme) | 轻量级架构记录工具 - Command-line tools for working with Architecture Decision Records | 1.0.7 | MIT | production | 
+ | [npm@6.0.0](https://docs.npmjs.com/) | a package manager for JavaScript | 6.0.0 | Artistic-2.0 | production | 
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+<h3>Development dependencies</h3>
+
+`getting-started-inner-source` uses the the following dependencies to build, test, or deploy:
+
+<!-- AUTO-GENERATED-CONTENT:START (DEPENDENCYTABLE:dev=true) -->
+| **Dependency** | **Description** | **Version** | **License** | **Type** |
+| -------------- | --------------- | ----------- | ----------- | -------- |
+ | [@semantic-release/changelog@1.0.1](https://github.com/semantic-release/changelog#readme) | Set of semantic-release plugins for creating or updating a changelog file | 1.0.1 | MIT | dev | 
+ | [@semantic-release/git@3.0.1](https://github.com/semantic-release/git#readme) | Set of semantic-release plugins to publish to a git repository | 3.0.1 | MIT | dev | 
+ | [@semantic-release/npm@3.0.2](https://github.com/semantic-release/npm#readme) | Set of semantic-release plugins to publish to a npm registry | 3.0.2 | MIT | dev | 
+ | [ajv@6.2.0](https://github.com/epoberezkin/ajv) | Another JSON Schema Validator | 6.2.0 | MIT | dev | 
+ | [ajv-keywords@3.1.0](https://github.com/epoberezkin/ajv-keywords#readme) | Custom JSON-Schema keywords for Ajv validator | 3.1.0 | MIT | dev | 
+ | [commitplease@3.2.0](https://github.com/jzaefferer/commitplease#readme) | Validates strings as commit messages | 3.2.0 | MIT | dev | 
+ | [eslint@4.18.1](https://eslint.org) | An AST-based pattern checker for JavaScript. | 4.18.1 | MIT | dev | 
+ | [eslint-config-scanjs@1.0.0-beta4](https://github.com/mozfreddyb/eslint-config-scanjs#readme) | umbrella config to get scanjs-like functionality from eslint | 1.0.0-beta4 | MPL-2.0 | dev | 
+ | [eslint-config-standard@11.0.0](https://github.com/standard/eslint-config-standard) | JavaScript Standard Style - ESLint Shareable Config | 11.0.0 | MIT | dev | 
+ | [eslint-config-xo-space@0.18.0](https://github.com/xojs/eslint-config-xo-space#readme) | ESLint shareable config for XO with 2-space indent | 0.18.0 | MIT | dev | 
+ | [eslint-plugin-import@2.9.0](https://github.com/benmosher/eslint-plugin-import) | Import with sanity. | 2.9.0 | MIT | dev | 
+ | [eslint-plugin-jsdoc@3.5.0](https://github.com/gajus/eslint-plugin-jsdoc#readme) | JSDoc linting rules for ESLint. | 3.5.0 | BSD-3-Clause | dev | 
+ | [eslint-plugin-json@1.2.0](https://github.com/azeemba/eslint-plugin-json#readme) | Lint JSON files | 1.2.0 | ISC | dev | 
+ | [eslint-plugin-no-unsafe-innerhtml@1.0.16](https://github.com/mozfreddyb/eslint-plugin-no-unsafe-innerhtml/) | custom ESLint rule to disallows unsafe innerHTML, outerHTML and insertAdjacentHTML | 1.0.16 | MPL-2.0 | dev | 
+ | [eslint-plugin-no-unsanitized@3.0.0](https://github.com/mozilla/eslint-plugin-no-unsanitized/) | ESLint rule to disallow unsanitized code | 3.0.0 | MPL-2.0 | dev | 
+ | [eslint-plugin-node@6.0.1](https://github.com/mysticatea/eslint-plugin-node#readme) | Additional ESLint's rules for Node.js | 6.0.1 | MIT | dev | 
+ | [eslint-plugin-promise@3.6.0](https://github.com/xjamundx/eslint-plugin-promise#readme) | Enforce best practices for JavaScript promises | 3.6.0 | ISC | dev | 
+ | [eslint-plugin-scanjs-rules@0.2.1](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules/) | ESLint plugin that contains ScanJS rules | 0.2.1 | MPL-2.0 | dev | 
+ | [eslint-plugin-security@1.4.0](https://github.com/nodesecurity/eslint-plugin-security#readme) | Security rules for eslint | 1.4.0 | Apache-2.0 | dev | 
+ | [eslint-plugin-standard@3.0.1](https://github.com/xjamundx/eslint-plugin-standard#readme) | ESlint Plugin for the Standard Linter | 3.0.1 | MIT | dev | 
+ | [eslint-plugin-unicorn@4.0.2](https://github.com/sindresorhus/eslint-plugin-unicorn#readme) | Various awesome ESLint rules | 4.0.2 | MIT | dev | 
+ | [eslint-plugin-xss@0.1.9](https://github.com/Rantanen/eslint-plugin-xss#readme) | Validates XSS related issues of mixing HTML and non-HTML content in variables. | 0.1.9 | ISC | dev | 
+ | [fixpack@2.3.1](https://github.com/henrikjoreteg/fixpack) | cli tool that cleans up package.json files. | 2.3.1 | MIT | dev | 
+ | [markdown-magic@0.1.20](https://github.com/DavidWells/markdown-magic#readme) | Automatically update markdown files with content from external sources | 0.1.20 | MIT | dev | 
+ | [markdown-magic-dependency-table@1.3.2](https://github.com/camacho/markdown-magic-dependency-table#readme) | Generate table of information about dependencies automatically in markdown | 1.3.2 | MIT | dev | 
+ | [markdown-magic-install-command@1.3.1](https://github.com/camacho/markdown-magic-install-command#readme) | Print install command for markdown file | 1.3.1 | MIT | dev | 
+ | [markdown-magic-package-scripts@1.2.1](https://github.com/camacho/markdown-magic-package-scripts#readme) | Print list of scripts in package.json with descriptions | 1.2.1 | MIT | dev | 
+ | [nsp@3.2.1](https://github.com/nodesecurity/nsp#readme) | The Node Security (nodesecurity.io) command line interface | 3.2.1 | Apache-2.0 | dev | 
+ | [semantic-release@13.4.1](https://github.com/semantic-release/semantic-release#readme) | Automated semver compliant package publishing | 13.4.1 | MIT | dev | 
+<!-- AUTO-GENERATED-CONTENT:END -->
+
+</p></details>
+
+---
+
+## 5. Building
+
+```shell
+npm run docs
+```
+
+## 6. Running tests
+
+> [![Jest BDD][jest-logo]][jest-url] Your test suites must pass within coverage thresholds before your pull request will be reviewed on GitHub.
+
+To run tests:
+
+```shell
+$ npm test
+# => Run all `getting-started-inner-source` tests on node
+
+$ npm run test:watch
+# => Run tests whenever a file changes
+```
+
+<!-- > <h4>Debugging your source code</h4>
+>
+> ![bug][octicon-bug] See [DEBUG.md](DEBUG.md) for information on debugging the code while running the unit tests. -->
+
+## 7. Source code style guidelines
+
+![verified][octicon-verified] `getting-started-inner-source` uses
+
+1.  [ESLint](http://clang.llvm.org/docs/ClangFormat.html) to evaluate and format source code;
+1.  [Fixpack](https://www.npmjs.com/package/fixpack) to order all `package.json` properties consistently; and
+1.  [Prettier](https://www.npmjs.com/package/eslint-plugin-prettier) to format JSON, Markdown, and YAML.
+2.  [Standard JS code style ![link-external][octicon-link-external]][standardjs-url] for code clarity and community conventions.
+
+You can both evaluate and format your all sources by running:
+
+```shell
+$ npm run lint
+# => Formats and lints all JavaScript, JSON, Markdown, and
+#    package.json.
+```
+
+You can also format sources by type:
+
+```shell
+# Evaluate and format JavaScript:
+npm run lint:js
+
+# Format JSON:
+npm run lint:json
+
+# Clean up the product manifest (package.json):
+npm run lint:manifest
+
+# Format all markdown files:
+npm run lint:md
+```
+
+## 8. DevSecOps
+
+> [![Travis CI logo][travis-ci-logo]][travis-ci-url]
+>
+> `commonality/getting-started-inner-source` uses [Travis CI][travis-ci-url] for continuous integration and delivery.
+
+All tests are executed with Continuous Integration services.
+
+1.  We test on Node.js versions `10`, `9`, `8`, and `7.6.0` on Windows, Mac, and Ubuntu operating systems.
+1.  PRs will only be merged once all tests pass.
+1.  Travis CI will fail if any of the test suites fails, or a linting rule is violated.
+
+---
+
+<img align="left" alt="alert" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg"> If the source code does not pass linting, the CI will fail and the PR can not be merged.
+
+---
+
+<!-- ⛔️ Do not remove this comment or anything below it ⛔️ -->
+
+[standardjs-img]: https://img.shields.io/badge/code_style-standard-F1DA40.svg?style=flat-sqaure
+[standardjs-url]: https://standardjs.com
+
+<!-- 🔗 Help link references 🔗  -->
+
+[ghh-closing-issues-keywords-url]: https://help.github.com/articles/closing-issues-using-keywords/
+
+<!-- 🔗 Logo img references 🔗 -->
+
+[standardjs-logo]: https://cdn.rawgit.com/feross/standard/master/badge.svg
+[standardjs-url]: https://github.com/feross/standard
+[travis-ci-logo]: https://raw.githubusercontent.com/commonality/archetypes/master/docs/img/icons8/travis-ci-50.png
+[travis-ci-url]: https://travis-ci.org/commonality/getting-started-inner-source
+[eslint-logo]: https://raw.githubusercontent.com/commonality/getting-started-inner-source/master/.github/assets/img/logo-eslint.png
+[eslint-url]: https://eslint.org/docs/user-guide/getting-started
+[jest-logo]: https://raw.githubusercontent.com/commonality/getting-started-inner-source/master/.github/assets/img/logo-jest.png
+[jest-url]: https://facebook.github.io/jest/docs/en/getting-started.html
+
+<!-- 🔗  Body link references 🔗   -->
+
+[issue-workflow-img]: ../img/icons8/contribution-lifecycle-create-issue.png
+[label-status-triage-img]: https://fakeimg.pl/200x24/d4c5f9/000/?text=status:+triage&font_size=20&font=museo
+[pr-workflow-img]: ../img/icons8/contribution-lifecycle-pr.png
+
+<!-- 🔗  Octicon img references 🔗   -->
 
 [octicon-alert]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg
 [octicon-arrow-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-down.svg

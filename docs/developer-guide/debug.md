@@ -1,129 +1,49 @@
-# Getting Started with InnerSource
+# Debugging
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+> <img align="bottom" alt="bug" height="50" width="50" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/bug.svg"> Identify and remove errors from (computer hardware or software). <sup>[[1]](#def-debug)
 
 ## Table of contents
 
 <!-- toc -->
 
-- [1. What is InnerSource, and how does it benefit you?](#1-what-is-innersource-and-how-does-it-benefit-you)
-- [2. Starting an InnerSource product](#2-starting-an-innersource-product)
-- [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
-- [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
-- [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
-- [7. InnerSource Governance](#7-innersource-governance)
-- [8. Code of Conduct](#8-code-of-conduct)
-- [9. InnerSource Metrics](#9-innersource-metrics)
-- [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
+- [Resources](#resources)
+- [References](#references)
 
 <!-- tocstop -->
 
 <!-- tocend -->
 
-## 1. What is InnerSource, and how does it benefit you?
+## Resources
 
-> <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
->
-> **InnerSource is a working model that:**
->
-> 1. Gives your team access to the most talented engineers and designers in your organization
-> 1. Grants designers and engineers the freedom to work on products they’re passionate about.
->
-> **InnerSource compliments Agile product delivery through:**
->
-> 1. Transparent delivery processes and open communication;
-> 1. Sharing source code among IT peers; and
-> 1. Accepting contributions from those peers.
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
+1.  [danluu / debugging-stories ![link-external][octicon-link-external]](https://github.com/danluu/debugging-stories/#readme)
 
-## 2. Starting an InnerSource product
+    > A collection of debugging stories.
 
-> <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-checklist-url].
+1. [gjbex / training-material ![link-external][octicon-link-external]](https://github.com/gjbex/training-material/#readme)
 
-## 3. How to Contribute to InnerSource
+    > A collection of code examples as well as presentations for training purposes.
 
-> <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
+1.  [Teach debugging ![link-external][octicon-link-external]](http://danluu.com/teach-debugging/)
 
-## 4. Finding Consumers for your InnerSource Product
+    > The importance of systematic debugging.
 
-> <img align="bottom" alt="telescope" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg">
->
-> :soon: Get your product into the happy hands of users and grow your product.
+1.  [trstringer / cli-debugging-cheatsheets ![link-external][octicon-link-external]](https://github.com/trstringer/cli-debugging-cheatsheets/#readme)
 
-## 5. Building Welcoming Communities
+    > Collection of command-line debugging cheatsheets for multiple languages and runtimes.
 
-> <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
->
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
+1. ["Why debugging is all about understanding" ![link-external][octicon-link-external]](https://futurice.com/blog/why-debugging-is-all-about-understanding)
 
-## 6. Best Practices for Maintainers
+    > Bugs can cost a software project up to 50% of its budget. How can programmers fight bugs faster and better?
 
-> <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
+## References
 
-## 7. InnerSource Governance
+<a name="def-debug"></a>
 
-> <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
+**[ 1 ]** _debug | Definition of debug in English by Oxford Dictionaries._ (2018). _Oxford Dictionaries | English._ Retrieved 25 May 2018, from <https://en.oxforddictionaries.com/definition/debug>
 
-## 8. Code of Conduct
+<!-- ⛔️ Do not remove this comment or anything below it ⛔️ -->
 
-> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
-
-## 9. InnerSource Metrics
-
-> <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
->
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
-
-## 10. InnerSource as a pathway to Open Source
-
-> <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
->
-> :soon: How to start the process of making your InnerSource product open to the world.
-
----
-
-<!-- ⛔️ Do not remove this comment or anything below it ⛔️  -->
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source?ref=badge_large)
-
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
-
-<!-- ⛔️ Octicon img references ⛔️  -->
+<!-- 🔗  Octicon img references 🔗   -->
 
 [octicon-alert]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg
 [octicon-arrow-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-down.svg
