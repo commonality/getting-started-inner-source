@@ -92,6 +92,12 @@
 >
 > :soon: How to start the process of making your InnerSource product open to the world.
 
+---
+
+<!-- ⛔️ Do not remove this comment or anything below it ⛔️  -->
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source?ref=badge_large)
+
 [best-practices-img]: ./docs/img/icons8-best-seller-96.png
 [community-img]: ./docs/img/icons8-user-groups-96.png
 [contribute-url]: ./docs/how-to-contribute-to-inner-source.md
