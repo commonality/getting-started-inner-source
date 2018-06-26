@@ -2,6 +2,23 @@
 
 > <img align="bottom" alt="code" height="50" width="50" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/code.svg"> This guide is for those who want to contribute code to `getting-started-inner-source`. This guide describes how to set up your development environment so that you can build and test `getting-started-inner-source`.
 
+## Table of contents
+
+<!-- toc -->
+
+- [1. Recommended skills](#1-recommended-skills)
+- [2. Development software](#2-development-software)
+- [3. Getting the source code](#3-getting-the-source-code)
+- [4. Installing dependencies](#4-installing-dependencies)
+- [5. Building](#5-building)
+- [6. Running tests](#6-running-tests)
+- [7. Source code style guidelines](#7-source-code-style-guidelines)
+- [8. DevSecOps](#8-devsecops)
+
+<!-- tocstop -->
+
+<!-- tocend -->
+
 ## 1. Recommended skills
 
 In order to work with `getting-started-inner-source` as a developer, we recommend you:

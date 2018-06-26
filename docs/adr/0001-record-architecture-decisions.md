@@ -26,6 +26,8 @@ We need to record the architectural decisions made on this project, since:
 
 We will document every architecture-level decision for `getting-started-inner-source` and its core modules with an [Architecture Decision Record][nygard-article-url]. These are a well structured, relatively lightweight way to capture architectural proposals. They can serve as an artifact for discussion, and remain as an enduring record of the context and motivation of past decisions.
 
+### Architecture decision workflow
+
 The workflow will be:
 
 1. A community member creates an ADR document outlining an approach for a particular question or problem. The ADR has an initial status of "proposed."

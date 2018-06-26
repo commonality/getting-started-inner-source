@@ -7,10 +7,13 @@
 <!-- toc -->
 
 - [1. Conventions used in this guide](#1-conventions-used-in-this-guide)
-- [2. Resource Oriented Design](#2-resource-oriented-design)
-  * [2.1. Definitions](#21-definitions)
+- [2. Standards compliance](#2-standards-compliance)
+- [3. Resources, Collections, and URIs](#3-resources-collections-and-uris)
+  * [2.1. URI pathnames represent collections](#21-uri-pathnames-represent-collections)
   * [2.2. Methods](#22-methods)
-  * [2.3. URI paths are resource names](#23-uri-paths-are-resource-names)
+- [Style guidelines](#style-guidelines)
+  * [Status codes](#status-codes)
+  * [Pagination, limit, and offset parameters](#pagination-limit-and-offset-parameters)
 - [3. Security](#3-security)
 - [4. Documentation](#4-documentation)
 
@@ -22,11 +25,15 @@
 
 The requirement level keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" used in this document are to be interpreted as described in [RFC 2119 ![link-external][octicon-link-external]][rfc-2119].
 
-## 2. Resource Oriented Design
+## 2. Standards compliance
+
+Standard | Description | Reference
+:--------|:------------|:---------
+OpenAPI version 3.0.0 | A language-agnostic interface to RESTful APIs which allows both humans and computers to discover and understand the capabilities of the service without access to source code, documentation, or through network traffic inspection. | <https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#openapi-specification>
+
+## 3. Resources, Collections, and URIs
 
 **We follow resource-oriented design.** Resource-oriented design consists of three core components: <samp>resources</samp>, <samp>collections</samp>, and <samp>URIs</samp>.
-
-### 2.1. Definitions
 
 <dl>
   <dt><samp>Resource</samp></dt>
@@ -38,6 +45,48 @@ The requirement level keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL N
   <dt><samp>URI</samp></dt>
   <dd>An identifier for a network location of a <samp>resource</samp> or <samp>collection</samp></dd>
 </dl>
+
+### 2.1. URI pathnames represent collections
+
+URI paths MUST match the resources they represent.
+
+Given a resource of type `Person` (which inherits properties from the resource type `Party`):
+
+```json
+[
+  {
+    "partyId": "38c2443f-13d3-475e-891d-b6053bbc94a4",
+    "personName": {
+      "givenName": "Jonathon",
+      "familyName": "Nguyen",
+      "usages": [
+        "Alias",
+        "Stage Name"
+      ],
+      "validFrom": "1994-02-01T06:00:00.000Z",
+      "validTo": null
+    }
+  }
+]
+```
+
+Could be represented as:
+
+```http
+GET /parties/:partyId
+```
+
+Where `:partyId` is a `field` input parameter that represents a unique identifier for resource of type `Party`. Consumers will replace this input parameter with a value, such as:
+
+```http
+GET /parties/38c2443f-13d3-475e-891d-b6053bbc94a4
+```
+
+Or:
+
+```http
+GET /people/38c2443f-13d3-475e-891d-b6053bbc94a4
+```
 
 ### 2.2. Methods
 
@@ -53,13 +102,13 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
 > ![info][octicon-info] We use a few more HTTP request methods, too, as you'll see below.
 
-### 2.3. URI paths are resource names
+**URI pathnames MUST match properties** of <samp>resources</samp> and <samp>collections</samp>.
 
-1. **URI pathnames match properties** of <samp>resources</samp> and <samp>collections</samp>.
+_Why:_
 
-    _Why:_
+> ![info][octicon-info] This is a very well-known design to developers (your main API consumers). Apart from readability and ease of use, it allows us to write generic libraries and connectors without even knowing what the API is about.
 
-    > ⌦ This is a very well-known design to developers (your main API consumers). Apart from readability and ease of use, it allows us to write generic libraries and connectors without even knowing what the API is about.
+## Style guidelines
 
 1.  **Use kebab-case** for URIs.
 
@@ -67,34 +116,24 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
 1.  **Use plural kebab-case for resource names** in URIs.
 
-1.  **Always use a plural nouns collections**, e.g., `/users`.
+2.  **Collections MUST be plural nouns**, e.g., `/users`.
 
     _Why:_
 
-    > ⌦ Consistency and legibility. [read more...](https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names)
+    > ![info][octicon-info] Consistency and legibility. [read more...](https://apigee.com/about/blog/technology/restful-api-design-plural-nouns-and-concrete-names)
 
-1.  Always use a singular concept that starts with a collection and ends to an identifier:
+3.  **Select unique members in a collection with an identifier in the URI path**
 
     ```http
     /students/245743
     /airports/kjfk
     ```
 
-1.  Avoid URIs like this:
-
-    ```http
-    GET /blogs/:blogId/posts/:postId/summary
-    ```
-
-    _Why:_
-
-    > ⌦ This is not pointing to a resource but to a property instead. You can pass the property as a parameter to trim your response.
-
 1.  Keep verbs out of your resource URIs.
 
     _Why:_
 
-    > ⌦ Because if you use a verb for each resource operation you soon will have a huge list of URIs and no consistent pattern which makes it difficult for developers to learn. Plus we use verbs for something else.
+    > ![info][octicon-info] Because if you use a verb for each resource operation you soon will have a huge list of URIs and no consistent pattern which makes it difficult for developers to learn. Plus we use verbs for something else.
 
 1.  Use verbs for non-resources. In this case, your API doesn't return any resources. Instead, you execute an operation and return the result. These **are not** CRUD (create, retrieve, update, and delete) operations:
 
@@ -104,25 +143,25 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ Because for CRUD we use HTTP methods on `resource` or `collection` URIs. The verbs we were talking about are actually `Controllers`. You usually don't develop many of these. [read more...](https://byrondover.github.io/post/restful-api-guidelines/#controller)
+    > ![info][octicon-info] Because for CRUD we use HTTP methods on `resource` or `collection` URIs. The verbs we were talking about are actually `Controllers`. You usually don't develop many of these. [read more...](https://byrondover.github.io/post/restful-api-guidelines/#controller)
 
 1.  The request body or response type is JSON then please follow `camelCase` for `JSON` property names to maintain the consistency.
 
     _Why:_
 
-    > ⌦ This is a JavaScript project guideline, Where Programming language for generating JSON as well as Programming language for parsing JSON are assumed to be JavaScript.
+    > ![info][octicon-info] This is a JavaScript project guideline, Where Programming language for generating JSON as well as Programming language for parsing JSON are assumed to be JavaScript.
 
 1.  Even though a resource is a singular concept that is similar to an object instance or database record, you should not use your `table_name` for a resource name and `column_name` resource property.
 
     _Why:_
 
-    > ⌦ Because your intention is to expose Resources, not your database schema details.
+    > ![info][octicon-info] Because your intention is to expose Resources, not your database schema details.
 
 1.  Again, only use nouns in your URI when naming your resources and don’t try to explain their functionality.
 
     _Why:_
 
-    > ⌦ Only use nouns in your resource URIs, avoid endpoints like `/addNewUser` or `/updateUser` . Also avoid sending resource operations as a parameter.
+    > ![info][octicon-info] Only use nouns in your resource URIs, avoid endpoints like `/addNewUser` or `/updateUser` . Also avoid sending resource operations as a parameter.
 
 1.  Explain the CRUD functionalities using HTTP methods:
 
@@ -142,7 +181,7 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ This is a natural way to make resources explorable.
+    > ![info][octicon-info] This is a natural way to make resources explorable.
     >
     > _How:_
     >
@@ -164,7 +203,7 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ When your APIs are public for other third parties, upgrading the APIs with some breaking change would also lead to breaking the existing products or services using your APIs. Using versions in your URI can prevent that from happening. [read more...](https://apigee.com/about/blog/technology/restful-api-design-tips-versioning)
+    > ![info][octicon-info] When your APIs are public for other third parties, upgrading the APIs with some breaking change would also lead to breaking the existing products or services using your APIs. Using versions in your URI can prevent that from happening. [read more...](https://apigee.com/about/blog/technology/restful-api-design-tips-versioning)
 
 1.  Response messages must be self-descriptive. A good error message response might look something like this:
 
@@ -205,16 +244,17 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ Developers depend on well-designed errors at the critical times when they are troubleshooting and resolving issues after the applications they've built using your APIs are in the hands of their users.
+    > ![info][octicon-info] Developers depend on well-designed errors at the critical times when they are troubleshooting and resolving issues after the applications they've built using your APIs are in the hands of their users.
 
-    ---
+### Status codes
 
-    _![shield][octicon-shield] **Keep security exception messages as generic as possible.**_ For instance, instead of saying ‘incorrect password’, you can reply back saying ‘invalid username or password’ so that we don’t unknowingly inform user that username was indeed correct and only the password was incorrect.
+1. Status codes represent resource request results. Status codes declare whether:
 
-    ---
+    - **Everything worked**,
+    - The **client app did something wrong**, or
+    - The **API did something wrong**.
 
-1.  Use only these 8 status codes to send with you response to describe whether **everything worked**,
-    The **client app did something wrong\*\* or The **API did something wrong\*\*.
+2. Limit your API response results to eight (8) status codes.
 
     _Which ones:_
 
@@ -236,16 +276,33 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ Most API providers use a small subset HTTP status codes. For example, the Google GData API uses only 10 status codes, Netflix uses 9, and Digg, only 8. Of course, these responses contain a body with additional information.There are over 70 HTTP status codes. However, most developers don't have all 70 memorized. So if you choose status codes that are not very common you will force application developers away from building their apps and over to wikipedia to figure out what you're trying to tell them. [read more...](https://apigee.com/about/blog/technology/restful-api-design-what-about-errors)
+    > ![info][octicon-info] Most API providers use a small subset HTTP status codes. For example, the Google GData API uses only 10 status codes, Netflix uses 9, and Digg, only 8. Of course, these responses contain a body with additional information. There are over 70 HTTP status codes. However, most developers don't have all 70 memorized. So if you choose status codes that are not very common you will force application developers away from building their apps and over to wikipedia to figure out what you're trying to tell them. [read more...](https://apigee.com/about/blog/technology/restful-api-design-what-about-errors)
+
+### Pagination, limit, and offset parameters
 
 1.  Provide total numbers of resources in your response.
+
 1.  Accept `limit` and `offset` parameters.
 
-1.  The amount of data the resource exposes should also be taken into account. The API consumer doesn't always need the full representation of a resource.Use a fields query parameter that takes a comma separated list of fields to include:
+1.  **Use a `fields` query parameter that takes a comma separated list of resource `properties` to include.**
+
+    > ```http
+    > GET /student?fields=id,name,age,class
+    > ```
+
+    _Why:_
+    
+    > ![info][octicon-info] Your API consumers don't always need the full representation of a resource, nor the network latency associated with large `response` bodies.
+
+1. Avoid URIs nested resource properties in your URI path:
 
     ```http
-    GET /student?fields=id,name,age,class
+    GET /blogs/:blogId/posts/:postId/summary
     ```
+
+    _Why:_
+
+    > ![info][octicon-info] This is not pointing to a resource but to a property instead. You can pass the property as a parameter to trim your response.
 
 1.  Pagination, filtering, and sorting don’t need to be supported from start for all resources. Document those resources that offer filtering and sorting.
 
@@ -253,11 +310,17 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
 <img align="bottom" alt="shield" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/shield.svg"> These are some basic security best practices.
 
+---
+
+_![shield][octicon-shield] **Keep security exception messages as generic as possible.**_ For example, if your API unsuccessfully tries to write in to a database, it should not display an error message that includes the user name it is using.
+
+---
+
 1.  Don't use basic authentication unless over a secure connection (HTTPS). Authentication tokens must not be transmitted in the URI: `GET /users/123?token=asdf....`
 
     _Why:_
 
-    > ⌦ Because Token, or user ID and password are passed over the network as clear text (it is base64 encoded, but base64 is a reversible encoding), the basic authentication scheme is not secure. [read more...](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
+    > ![info][octicon-info] Because Token, or user ID and password are passed over the network as clear text (it is base64 encoded, but base64 is a reversible encoding), the basic authentication scheme is not secure. [read more...](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
 
 1.  Tokens must be transmitted using the Authorization header on every request: `Authorization: Bearer xxxxxx, Extra yyyyy`.
 
@@ -269,33 +332,35 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 
     _Why:_
 
-    > ⌦ To protect your APIs from bot threats that call your API thousands of times per hour. You should consider implementing rate limit early on.
+    > ![info][octicon-info] To protect your APIs from bot threats that call your API thousands of times per hour. You should consider implementing rate limit early on.
 
 1.  Setting HTTP headers appropriately can help to lock down and secure your web application. [read more...](https://github.com/helmetjs/helmet)
 
 1.  Your API should convert the received data to their canonical form or reject them. Return 400 Bad Request with details about any errors from bad or missing data.
 
-1.  All the data exchanged with the ReST API must be validated by the API.
+2.  All the data exchanged with the ReST API must be validated by the API.
 
-1.  Serialize your JSON.
+2.  Serialize your JSON.
 
     _Why:_
 
-    > ⌦ A key concern with JSON encoders is preventing arbitrary JavaScript remote code execution within the browser... or, if you're using node.js, on the server. It's vital that you use a proper JSON serializer to encode user-supplied data properly to prevent the execution of user-supplied input on the browser.
+    > ![info][octicon-info] A key concern with JSON encoders is preventing arbitrary JavaScript remote code execution within the browser... or, if you're using node.js, on the server. It's vital that you use a proper JSON serializer to encode user-supplied data properly to prevent the execution of user-supplied input on the browser.
 
 1.  Validate the content-type and mostly use `application/*json` (Content-Type header).
 
     _Why:_
 
-    > ⌦ For instance, accepting the `application/x-www-form-URIencoded` mime type allows the attacker to create a form and trigger a simple POST request. The server should never assume the Content-Type. A lack of Content-Type header or an unexpected Content-Type header should result in the server rejecting the content with a `4XX` response.
+    > ![info][octicon-info] For instance, accepting the `application/x-www-form-URIencoded` mime type allows the attacker to create a form and trigger a simple POST request. The server should never assume the Content-Type. A lack of Content-Type header or an unexpected Content-Type header should result in the server rejecting the content with a `4XX` response.
 
 ## 4. Documentation
 
-1.  **Fill the API section in the README for "API"**.
+1.  **Fill the API section in the README for "API"**. For large APIs, provide a link to comprehensive documentation.
 
 1.  **Authentication examples.** Describe API authentication methods with a code sample.
 
-1.  **URI structure.** Explaining The URI Structure (path only, no root URI) including The request type (Method). For each endpoint explain:
+2. **Host information:** Prefer specifing hostnames using the [host-meta JSON schema ![external-link][octicon-link-external]][schema-host-meta-url].
+
+1.  **URI structure.** Explain the URI Structure (path only, no root URI) including The request type (Method).
 
 1.  **URI Params.** If URI Params exist, specify them in accordance with name mentioned in URI section:
 
@@ -370,6 +435,7 @@ Our APIs perform [CRUD ![link-external][octicon-link-external]][crud-URI] operat
 [data-structures-URI]: https://en.wikipedia.org/wiki/Data_structure
 [modular-programming-URI]: https://en.wikipedia.org/wiki/Modular_programming
 [rfc-2119]: https://www.ietf.org/rfc/rfc2119.txt
+[schema-host-meta-url]: http://json.schemastore.org/host-meta
 
 <!-- ⛔️ LINK REFERENCES(Begin) ⛔️  -->
 
