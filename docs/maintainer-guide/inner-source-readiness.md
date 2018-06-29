@@ -1,130 +1,185 @@
-# Getting Started with InnerSource
+# InnerSource readiness
 
-> Quickly deliver innovative, reusable software that is _secure_ and _mature_ enough to accept contributions from the engineering and design communities.
+<img alt="tasklist" align="bottom" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tasklist.svg">
+
+> Prepare yourself and your team with this checklist of capabilities before (or after!) your InnerSource product launch.
 
 ## Table of contents
 
 <!-- toc -->
 
-- [1. What is InnerSource, and how does it benefit you?](#1-what-is-innersource-and-how-does-it-benefit-you)
-- [2. Starting an InnerSource product](#2-starting-an-innersource-product)
-- [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
-- [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
-- [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
-- [7. InnerSource Governance](#7-innersource-governance)
-- [8. Code of Conduct](#8-code-of-conduct)
-- [9. InnerSource Metrics](#9-innersource-metrics)
-- [10. InnerSource as a pathway to Open Source](#10-innersource-as-a-pathway-to-open-source)
+- [Capability assessment](#capability-assessment)
+  * [Code](#code)
+  * [Licenses and copyright](#licenses-and-copyright)
+  * [Releases](#releases)
+  * [Quality](#quality)
+  * [Community](#community)
+  * [Consensus Building](#consensus-building)
+- [Attributions](#attributions)
 
 <!-- tocstop -->
 
 <!-- tocend -->
 
-## 1. What is InnerSource, and how does it benefit you?
+## Capability assessment
 
-> <img align="bottom" alt="book" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/book.svg">
->
-> **InnerSource is a working model that:**
->
-> 1. Gives your team access to the most talented engineers and designers in your organization
-> 1. Grants designers and engineers the freedom to work on products they’re passionate about.
->
-> **InnerSource compliments Agile product delivery through:**
->
-> 1. Transparent delivery processes and open communication;
-> 1. Sharing source code among IT peers; and
-> 1. Accepting contributions from those peers.
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Learn more about InnerSource Programs; its challenges and benefits; and InnerSource "Roadmaps."**][what-is-inner-source-url]
-
-## 2. Starting an InnerSource product
-
-> <img align="bottom" alt="checklist" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/checklist.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> [**Everything you need develop and deliver products harnessing the collective creativity and expertise the entire engineering and design community**][inner-source-preparedness-url].
-
-## 3. How to Contribute to InnerSource
-
-> <img align="bottom" alt="gift" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/gift.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Want to contribute to InnerSource? Here's a guide to making InnerSource contributions for n00bs and Nobel laureates.](docs/developer-guide/#readme)**
-
-## 4. Finding Consumers for your InnerSource Product
-
-> <img align="bottom" alt="telescope" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/telescope.svg">
->
-> :soon: Get your product into the happy hands of users and grow your product.
-
-## 5. Building Welcoming Communities
-
-> <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
->
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
-
-## 6. Best Practices for Maintainers
-
-> <img align="bottom" alt="check" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/check.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Learn how to make your life easier as an InnerSource maintainer, from documenting processes to leveraging your community's expertise.](docs/maintainer-guide/#readme)**
-
-## 7. InnerSource Governance
-
-> <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
-
-## 8. Code of Conduct
-
-> <img align="bottom" alt="smiley" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/smiley.svg">
->
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Facilitate healthy and constructive community behavior by adopting and enforcing a code of conduct.](/docs/code-of-conduct/#readme)**
-
-## 9. InnerSource Metrics
-
-> <img align="bottom" alt="graph" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/graph.svg">
->
-> [**➡ &nbsp;&nbsp;Make informed decisions to help your InnerSource product thrive by measuring and tracking its success**][iss-metrics-url].
-
-## 10. InnerSource as a pathway to Open Source
-
-> <img align="bottom" alt="rocket" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/rocket.svg">
->
-> :soon: How to start the process of making your InnerSource product open to the world.
+Honestly evaluate your, your team's, and your product's InnerSource preparedness by assessing key capabilities.
 
 ---
 
-<!-- ⛔️ Do not remove this comment or anything below it ⛔️  -->
+<h4><img align="bottom" alt="alert" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg"> This assessment is <em>not</em> a test.</h4>
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fcommonality%2Fgetting-started-inner-source?ref=badge_large)
+You don't need to "score" yourself, your team, nor project.
 
-[inner-source-preparedness-url]: ./docs/maintainer-guide/inner-source-preparedness.md
-[best-practices-img]: ./docs/img/icons8-best-seller-96.png
-[community-img]: ./docs/img/icons8-user-groups-96.png
-[contribute-url]: ./docs/how-to-contribute-to-inner-source.md
-[finding-users-img]: ./docs/img/icons8-searchlight-96.png
-[finding-users-url]: ./docs/finding-users-for-your-product.md
-[md-image]: ./docs/img/icon-markdown-48.png
-[pdf]: ./docs/img/icon-pdf.png
-[inner-source-checklist-url]: ./docs/inner-source-checklist.md
-[iss-metrics-img]: ./docs/img/icons8-area-chart-96.png
-[iss-metrics-url]: ./docs/inner-source-metrics.md
-[osi-logo-img]: ./docs/img/logo-osi.png
-[oss-law-img]: ./docs/img/icons8-law-96.png
-[oss-path-img]: ./docs/img/icons8-waypoint-map-96.png
-[program-structure-img]: ./docs/img/icons8-mesh-100.png
-[program-structure-url]: ./docs/verizon-inner-source-and-open-source-program-structure.md
-[sponsorship-url]: InnerSource-product-delivery-sponsorship
-[starting-product-img]: ./docs/img/icons8-inspection-128.png
-[starting-product-url]: ./doc/starting-an-inner-source-product.png
-[topic-contribute-img]: docs/img/icons8-developer-96.png
-[topic-finding-users-img]: docs/img/icons8-gps-antenna-96.png
-[topic-idea-img]: ./docs/img/icons8-idea-96.png
-[topic-learning-img]: ./docs/img/icons8-reading-96.png
-[vz-c-o-c-pdf]: ./docs/verizon-code-of-conduct-2017.pdf
-[what-is-inner-source-url]: ./docs/what-is-inner-source.md
+Just these questions to identify areas of improvement.
 
-<!-- ⛔️ Octicon img references ⛔️  -->
+---
+
+### Code
+
+- [ ] **CD10**
+
+  > The project produces InnerSource software, for distribution to the company at no charge.
+
+- [ ] **CD20**
+
+  > The project's code is easily discoverable and  accessible on our Intranet.
+
+- [ ] **CD30**
+
+  > Builds are reproducible in a Terminal (command-line interface) using widely available, company-standard tools.
+
+- [ ] **CD40**
+
+  > The full history of the project's code is available via a source code control system, in a way that allows any released version to be recreated.
+
+- [ ] **CD50**
+
+  > The provenance—place, time, and origination—of each line of code is established via the source code control system, in a reliable way based on strong authentication of the committer. When third-party contributions are committed, commit messages provide reliable information about the code provenance.
+
+### Licenses and copyright
+
+- [ ] **LC10**
+
+  > The code is released under Verizon copyright.
+
+- [ ] **LC20**
+
+  > Libraries that are mandatory dependencies of the project's code do not create future intellectual property restrictions if the code were to be released as open source.
+
+- [ ] **LC30**
+
+  > The libraries mentioned in LC20 are available as Open Source software.
+
+- [ ] **LC40**
+
+  > Committers are bound by an Individual Contributor Agreement that defines which code they are allowed to commit; how they need to identify code that is not their own; and the quality assurance checks required for merges.
+
+- [ ] **LC50**
+
+  > The copyright ownership of everything that the project produces is clearly defined and documented.
+
+### Releases
+
+- [ ] **RE10**
+
+  > Releases consist of source code, distributed using standard and open archive formats that are expected to stay readable in the long term.
+
+- [ ] **RE20**
+
+  > Releases conform to the [Semantic Verisoning (semver) 2.0.0 specification](https://semver.org/spec/v2.0.0.html), which increments the product's semver according to the types of changes introduced with each release. A CHANGELOG.md also describes these changes, and includes hyperlinks to SHA1 commit identifiers.
+
+- [ ] **RE30**
+
+  > Releases are signed and/or distributed along with digests that can be reliably used to validate the downloaded archives.
+
+- [ ] **RE40**
+
+  > Distributions are available on company-approved artifact repositories or registries with every release, and retrievable using company-approved dependency managers.
+
+- [ ] **RE50**
+
+  > Releases are tagged by semver (see **RE20**) using `git-tag`.
+
+### Quality
+
+- [ ] **QU10**
+
+  > The project is open and honest about the quality of its code. Various levels of quality and maturity for various modules are natural and acceptable as long as they are clearly communicated.
+
+- [ ] **QU20**
+
+  > The project puts a very high priority on producing secure software, and executes fitness-functions with report artifacts with every build.
+
+- [ ] **QU30**
+
+  > The project provides a well-documented channel to report security issues, along with a documented way of responding to them.
+
+- [ ] **QU40**
+
+  > The project puts a high priority on backwards compatibility by documenting deprecated interfaces; announcing incompatible changes; incrementing its semver <samp>MAJOR</samp> version when backwards compatibility is broken; and providing tools or instructions to help consumers transition to new features.
+
+- [ ] **QU50**
+
+  > The project strives to respond to documented defect reports in a timely manner.
+
+### Community
+
+- [ ] **CO10**
+
+  > The project has a well-known homepage that points to all the information required to operate according to this maturity model.
+
+- [ ] **CO20**
+
+  > The community welcomes contributions from anyone who acts in good faith and in a respectful manner and adds value to the project.
+
+- [ ] **CO30**
+
+  > Contributions include not only source code, but also documentation, constructive defect reports, constructive discussions, marketing, and generally anything that adds value to the project.
+
+- [ ] **CO40**
+
+  > The community is meritocratic and rewards rights and responsibilities to contributors who add value to the project.
+
+- [ ] **CO50**
+
+  > The way in which contributors can be granted more rights such as commit access or decision power is clearly documented and is the same for all contributors.
+
+- [ ] **CO60**
+
+  > The community operates based on consensus of its members (see CS10) who have decision power.
+
+- [ ] **CO70**
+
+  > The project strives to answer user questions in a timely manner.
+
+### Consensus Building
+
+- [ ] **CS10**
+
+  > The project maintains a list of its contributors who have decision power.
+
+- [ ] **CS20**
+
+  > Decisions are made by consensus among PMC members and are documented on the project's main communications channel. Community opinions are taken into account but the PMC has the final word if needed.
+
+- [ ] **CS30**
+
+  > Documented voting rules are used to build consensus when discussion is not sufficient.
+
+- [ ] **CS40**
+
+  > Vetoes are only valid for code commits and are justified by a technical explanation, as per the Apache voting rules defined in CS30.
+
+- [ ] **CS50**
+
+  > All "important" discussions happen asynchronously in written form on the project's main communications channel. Offline, face-to-face or private discussions that affect the project are also documented on that channel.
+
+## Attributions
+
+1. _Apache Community Development - A Maturity Model for Apache Projects._ (2018). _Community.apache.org._ Retrieved 28 June 2018, from <https://community.apache.org/apache-way/apache-project-maturity-model.html>
+
+<!-- 🔗  Octicon img references 🔗   -->
 
 [octicon-alert]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg
 [octicon-arrow-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-down.svg
