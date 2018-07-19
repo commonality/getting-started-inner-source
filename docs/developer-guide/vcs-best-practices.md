@@ -1,249 +1,87 @@
-# InnerSource readiness
+# Verison Control Systems (VCS) best practices
 
-<img alt="tasklist" align="bottom" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/tasklist.svg">
-
-> Prepare yourself and your team with this checklist of capabilities before (or after!) your InnerSource product launch.
+![git-logo][git-logo]
 
 ## Table of contents
 
 <!-- toc -->
 
-- [Capability assessment](#capability-assessment)
-  * [1. Code](#1-code)
-  * [2. Licenses and copyright](#2-licenses-and-copyright)
-  * [3. Releases](#3-releases)
-  * [4. Quality](#4-quality)
-  * [5. Community](#5-community)
-  * [6. Consensus Building (Governance)](#6-consensus-building-governance)
-- [Attributions](#attributions)
+- [1. Version control is for workflows, not back-ups](#1-version-control-is-for-workflows-not-back-ups)
+- [2. Agree on a workflow](#2-agree-on-a-workflow)
+  * [2.1. Trunk-based development](#21-trunk-based-development)
+  * [2.2. GitLab workflow](#22-gitlab-workflow)
+  * [2.3. GitHub workflow](#23-github-workflow)
+  * [2.4. Git flow](#24-git-flow)
+- [3. Use branches](#3-use-branches)
+- [4. Commit completed work](#4-commit-completed-work)
+- [5. Test before you commit](#5-test-before-you-commit)
+- [6. Write good commit messages](#6-write-good-commit-messages)
+  * [6.1. Adopt a conventional commit specification](#61-adopt-a-conventional-commit-specification)
+  * [6.2. Reference related issues and merge/pull requests](#62-reference-related-issues-and-mergepull-requests)
+- [7. Commit related changes](#7-commit-related-changes)
+- [8. Commit often](#8-commit-often)
 
 <!-- tocstop -->
 
 <!-- tocend -->
 
-## Capability assessment
+## 1. Version control is for workflows, not back-ups
 
-Honestly evaluate your, your team's, and your product's InnerSource preparedness by assessing key capabilities.
+...
 
----
+## 2. Agree on a workflow
 
-<h4><img align="bottom" alt="alert" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg"> This assessment is <em>not</em> a test.</h4>
+...
 
-You don't need to "score" yourself, your team, nor project.
+### 2.1. Trunk-based development
 
-Instead, use these questions to identify areas of improvement.
+### 2.2. GitLab workflow
 
----
+### 2.3. GitHub workflow
 
-### 1. Code
+### 2.4. Git flow
 
-<a name="CD10"></a>
+## 3. Use branches
 
-- [ ] **CD10**
+...
 
-  > The project produces InnerSource software, for distribution to the company at no charge.
+## 4. Commit completed work
 
-<a name="CD20"></a>
+...
 
-- [ ] **CD20**
+## 5. Test before you commit
 
-  > The project's code is easily discoverable and  accessible on our Intranet.
+...
 
-<a name="CD30"></a>
+## 6. Write good commit messages
 
-- [ ] **CD30**
+...
 
-  > Builds are reproducible in a Terminal (command-line interface) using widely available, company-standard tools.
+### 6.1. Adopt a conventional commit specification
 
-<a name="CD40"></a>
+...
 
-- [ ] **CD40**
+> ![light-bulb][octicon-light-bulb] **Conventional commit wizards**
+>
+> There are several wizards
 
-  > The full history of the project's code is available via a source code control system, in a way that allows any released version to be recreated.
+### 6.2. Reference related issues and merge/pull requests
 
-<a name="CD50"></a>
+...
 
-- [ ] **CD50**
+## 7. Commit related changes
 
-  > The provenance—place, time, and origination—of each line of code is established via the source code control system, in a reliable way based on strong authentication of the committer. When third-party contributions are committed, commit messages provide reliable information about the code provenance.
+...
 
-### 2. Licenses and copyright
+## 8. Commit often
 
-<a name="LC10"></a>
+...
 
-- [ ] **LC10**
+<!-- ⛔️ Do not remove this comment or anything below it ⛔️ -->
 
-  > The code is released under Verizon copyright.
+[git-logo]: ../img/icons8/git-logo.png
 
-<a name="LC20"></a>
-
-- [ ] **LC20**
-
-  > Libraries that are mandatory dependencies of the project's code do not create future intellectual property restrictions if the code were to be released as open source.
-
-<a name="LC30"></a>
-
-- [ ] **LC30**
-
-  > The libraries mentioned in [LC20](#LC20) are available as Open Source software.
-
-<a name="LC40"></a>
-
-- [ ] **LC40**
-
-  > Committers are bound by an Individual Contributor Agreement that defines which code they are allowed to commit; how they need to identify code that is not their own; and the quality assurance checks required for merges.
-
-<a name="LC50"></a>
-
-- [ ] **LC50**
-
-  > The copyright ownership of everything that the project produces is clearly defined and documented.
-
-### 3. Releases
-
-<a name="RE10"></a>
-
-- [ ] **RE10**
-
-  > Releases consist of source code, distributed using standard and open archive formats that are expected to stay readable in the long term.
-
-<a name="RE20"></a>
-
-- [ ] **RE20**
-
-  > Releases conform to the [Semantic Verisoning (semver) 2.0.0 specification ![external][octicon-link-external]](https://semver.org/spec/v2.0.0.html), which increments the product's semver according to the types of changes introduced with each release. A CHANGELOG.md also describes these changes, and includes hyperlinks to SHA1 commit identifiers.
-
-<a name="RE30"></a>
-
-- [ ] **RE30**
-
-  > Releases are signed and/or distributed along with digests that can be reliably used to validate the downloaded archives.
-
-<a name="RE40"></a>
-
-- [ ] **RE40**
-
-  > Distributions are available on company-approved artifact repositories or registries with every release, and retrievable using company-approved dependency managers.
-
-<a name="RE50"></a>
-
-- [ ] **RE50**
-
-  > Releases are tagged by semver (see [RE20](#RE20)) using `git-tag`.
-
-### 4. Quality
-
-<a name="QU10"></a>
-
-- [ ] **QU10**
-
-  > The project is open and honest about the quality of its code. Various levels of quality and maturity for various modules are natural and acceptable as long as they are clearly communicated.
-
-<a name="QU20"></a>
-
-- [ ] **QU20**
-
-  > The project puts a very high priority on producing secure software, and executes fitness-functions with report artifacts with every build.
-
-<a name="QU30"></a>
-
-- [ ] **QU30**
-
-  > The project provides a well-documented channel to report security issues, along with a documented way of responding to them.
-
-<a name="QU40"></a>
-
-- [ ] **QU40**
-
-  > The project puts a high priority on backwards compatibility by documenting deprecated interfaces; announcing incompatible changes; incrementing its semver <samp>MAJOR</samp> version when backwards compatibility is broken; and providing tools or instructions to help consumers transition to new features.
-
-<a name="QU50"></a>
-
-- [ ] **QU50**
-
-  > The project strives to respond to documented defect reports in a timely manner.
-
-### 5. Community
-
-<a name="CO10"></a>
-
-- [ ] **CO10**
-
-  > The project has a well-known homepage that points to all the information required to operate according to this maturity model.
-
-<a name="CO20"></a>
-
-- [ ] **CO20**
-
-  > The community welcomes contributions from anyone who acts in good faith and in a respectful manner and adds value to the project.
-
-<a name="CO30"></a>
-
-- [ ] **CO30**
-
-  > Contributions include not only source code, but also documentation, constructive defect reports, constructive discussions, marketing, and generally anything that adds value to the project.
-
-<a name="CO40"></a>
-
-- [ ] **CO40**
-
-  > The community is meritocratic and rewards rights and responsibilities to contributors who add value to the project.
-
-<a name="CO50"></a>
-
-- [ ] **CO50**
-
-  > The way in which contributors can be granted more rights such as commit access or decision power is clearly documented and is the same for all contributors.
-
-<a name="CO60"></a>
-
-- [ ] **CO60**
-
-  > The community operates based on consensus of its members (see [CS10](#CS10)) who have decision power.
-
-<a name="CO70"></a>
-
-- [ ] **CO70**
-
-  > The project strives to answer user questions in a timely manner.
-
-### 6. Consensus Building (Governance)
-
-<a name="CS10"></a>
-
-- [ ] **CS10**
-
-  > The project maintains a list of its contributors who have decision power.
-
-<a name="CS20"></a>
-
-- [ ] **CS20**
-
-  > Decisions are made by consensus among Chapter Technical Steering Committee  members and are documented on the project's main communications channel. Community opinions are taken into account but the Chapter Technical Steering Committee  has the final word if needed.
-
-<a name="CS30"></a>
-
-- [ ] **CS30**
-
-  > Documented voting rules are used to build consensus when discussion is not sufficient.
-
-<a name="CS40"></a>
-
-- [ ] **CS40**
-
-  > Vetoes are only valid for code commits and are justified by a technical explanation, as per the Apache voting rules defined in [CS30](#CS30).
-
-<a name="CS50"></a>
-
-- [ ] **CS50**
-
-  > All "important" discussions happen asynchronously in written form on the project's main communications channel. Offline, face-to-face or private discussions that affect the project are also documented on that channel.
-
-## Attributions
-
-1. _Apache Community Development - A Maturity Model for Apache Projects._ (2018). _Community.apache.org._ Retrieved 28 June 2018, from <https://community.apache.org/apache-way/apache-project-maturity-model.html>
-
-<!-- 🔗  Octicon img references 🔗   -->
+<!-- octicons -->
 
 [octicon-alert]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/alert.svg
 [octicon-arrow-down]: https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-down.svg

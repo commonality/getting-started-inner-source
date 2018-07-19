@@ -10,7 +10,7 @@
 - [2. Starting an InnerSource product](#2-starting-an-innersource-product)
 - [3. How to Contribute to InnerSource](#3-how-to-contribute-to-innersource)
 - [4. Finding Consumers for your InnerSource Product](#4-finding-consumers-for-your-innersource-product)
-- [5. Building Welcoming Communities](#5-building-welcoming-communities)
+- [5. Building Community](#5-building-community)
 - [6. Best Practices for Maintainers](#6-best-practices-for-maintainers)
 - [7. InnerSource Governance](#7-innersource-governance)
 - [8. Code of Conduct](#8-code-of-conduct)
@@ -56,11 +56,11 @@
 >
 > :soon: Get your product into the happy hands of users and grow your product.
 
-## 5. Building Welcoming Communities
+## 5. Building Community
 
 > <img align="bottom" alt="heart" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/heart.svg">
 >
-> :soon:  Build a community that encourages employees to use, contribute to, and evangelize your product.
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[Build a community that encourages employees to use, contribute to, and evangelize your product.](docs/communities/README.md)**
 
 ## 6. Best Practices for Maintainers
 
@@ -72,7 +72,7 @@
 
 > <img align="bottom" alt="organization" height="80" width="80" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/organization.svg">
 >
-> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ for collaboration and consensus with a framework of rules, roles, and responsibilities.](docs/maintainer-guide/governance.md)**
+> <img align="left" alt="arrow-right" height="30" width="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/svg/arrow-right.svg"> **[A governance model gives you _social framework_ based on transparent rules, roles, and responsibilities that promote collaboration and consensus.](docs/maintainer-guide/governance.md)**
 
 ## 8. Code of Conduct
 

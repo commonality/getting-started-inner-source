@@ -1,0 +1,6 @@
+[submodule "git-tips"]
+	path = docs/git-tips
+	url = https://github.com/git-tips/tips.git
+[submodule "wiki"]
+	path = wiki
+	url = https://github.com/commonality/getting-started-inner-source.wiki.git

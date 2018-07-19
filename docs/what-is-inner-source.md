@@ -296,7 +296,7 @@ This requires teams to:
 * Manage security updates
 * Plan for support
 
-<h3><em>Successful InnerSource and open-source teams are mature business and engineering teams.</em></h3>
+<h3><em>Successful</em> InnerSource and open-source teams are <em>capable</em> business and engineering teams.</h3>
 
 ## 4. Strategy and Roadmap
 
